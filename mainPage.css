@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../DM_Sans/DMSans-VariableFont_opsz,wght.ttf')format('truetype');
+
+}
+    
+* {
+    font-family: 'DM Sans';
+    box-sizing: border-box;
+}   
+nav{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align:  right;
+    padding-right: 60px;
+    padding-top: 30px
+}
+.headerLeft{
+    text-align: left;
+}
+nav ul li{
+    display:inline-block;
+    margin:10px 20px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: black;
+}
+.logo{
+    width: 160px;
+    cursor: pointer;
+}
+
