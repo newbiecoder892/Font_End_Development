@@ -6,37 +6,241 @@
 }
     
 * {
+    background-color: rgb(240, 240, 240);
     font-family: 'DM Sans';
     box-sizing: border-box;
 }   
-nav{
-    width:100%;
+.travelGuideBackground{
+    width: 100%;
+    filter: brightness(60%);
+    display: flex;
+}
+li{
+
+    list-style: none;
+}
+a{
+    color:black;
+    text-decoration: none;
+    font-size:1rem;
+}
+.travel_guide{
+    color:white;
+    padding: 5px;
+    border-radius: 7px;
+    background: #CC0000 ;
+
+}
+.travel_guide:hover{
+    text-decoration-line: underline;
+    color: black;
+    background: #00CCCC ;
+}
+.travel_guide:active{
+    padding: 4.5px;
+}
+/*food_drinks button*/
+.food_drinks{
+    padding: 5px;
+    border-radius: 7px;
+    background: #ffffff ;
+
+}
+.food_drinks:hover{
+    text-decoration-line: underline;
+    color: rgb(255, 255, 255);
+    background: #000000 ;
+}
+.food_drinks:active{
+    padding: 4.5px;
+}
+/*festival button*/
+.festival{
+    color:white;
+    padding: 5px;
+    border-radius: 7px;
+    background: #0032A0 ;
+
+}
+.festival:hover{
+    text-decoration-line: underline;
+    color: #000000;
+    background: #A06E00 ;
+}
+.festival:active{
+    padding: 4.5px;
+}
+/*contact_us button*/
+.contact_us{
+    color:black;
+    padding: 5px;
+    border-radius: 7px;
+    background: #FFD100 ;
+
+}
+.contact_us:hover{
+    text-decoration-line: underline;
+    color: #ffffff;
+    background: #002EFF ;
+}
+.contact_us:active{
+    padding: 4.5px;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+    scale: 0.9;
+
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-nav ul{
-    list-style: none;
-    width: 100%;
-    text-align:  right;
-    padding-right: 30px;
+.navbar .logo {
+    width: 140px;
+    cursor: pointer
 }
-.headerLeft{
-    text-align: left;
+.logo:hover{
+    scale: 1.05;
 }
-nav ul li{
-    font-size: larger;
-    display:inline-block;
-    margin:10px 20px;
-    text-size-adjust: auto;
-    padding-top: 10px;
+.navbar .links{
+    display:flex;
+    gap: 2rem;
 }
-nav ul li a{
-    text-decoration:none;
-    color: black;
-}
-.logo{
-    width: 180px;
+.navbar .toggle_btn{
+    font-size: 1.5rem;
     cursor: pointer;
+    display: none;
+}
+.signIn{
+    background-color: black ;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size:  0.8rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.signIn:hover{
+    scale: 1.05;
+    color: white;
+    font-weight: bold;
+}
+.signIn:active{
+    scale: 0.98;
 }
 
+.toggle_btn:hover{
+    scale: 1.05;
+}
+.toggle_btn:active{
+    scale: 0.95;
+}
+
+/*dropdown menu */
+.dropdown_menu{
+    position: absolute;
+    right:2rem;
+    top: 60px;
+    width: 80%;
+    height: 0;
+    background: rgb(243, 243, 243);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+.dropdown_menu.open{
+    height:210px;
+}
+.dropdown_menu li{
+    
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .signInDropDown{
+    background-color: black ;
+    display: flex;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size:  0.8rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.signInDropDown:hover{
+    scale: 1.01;
+    color: white;
+    font-weight: bold;
+}
+.signInDropDown:active{
+    scale: 0.95;
+}
+
+.toggle_btn:hover{
+    scale: 1.05;
+}
+.toggle_btn:active{
+    scale: 0.95;
+}
+.dropdown_menu .signInDropDown{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*TravelGuide*/
+.travelGuideBackground{
+    position: relative;
+}
+img{
+    width:100;
+    display: block;
+    margin:auto;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover{
+    opacity: 1;
+}
+.content h1{
+    font-size: 88px;
+    color:white;
+    margin-bottom: 15px;
+}
+
+/* responsive design */
+@media(max-width: 850px){
+    
+    .navbar .links, .navbar .signIn
+    {
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
