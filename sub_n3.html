@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameron Highlands - Discover the Cool Retreat</title>
+    <link rel="stylesheet" href="csstyle.css">
+    <link rel="stylesheet" href="nature-theme.css">
+    <script src="filter.js"></script>
+</head>
+<body>
+   <div class="sub-header">
+        <h1>Cameron Highlands - Discover the Cool Retreat</h1>
+        <div class="sub-img"><img src="image/cameron.jpg" alt="Cameron Highlands Image"></div>
+   </div>
+
+    <!-- Sub-Middle Section -->
+    <div class="sub-middle">
+        <div class="sub-intro">
+            <p>
+                Explore Cameron Highlands, Malaysia's premier hill station, known for its cool climate and lush landscapes. 
+                Nestled in the mountains, Cameron Highlands offers stunning tea plantations, picturesque farms, and vibrant markets. 
+                Enjoy a serene retreat and explore the scenic beauty of this highland paradise.
+            </p>
+            <div class="sub-buttons">
+                <button onclick="window.location.href='https://www.cameronhighland.net/'">Learn More</button>
+                <button onclick="window.location.href='https://maps.app.goo.gl/8EnuFVF8isJRV2mE7'">Show Location</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities/Attractions Section -->
+    <div class="sub-content">
+        <div>
+            <h2>What to Do in Cameron Highlands</h2>
+            <ul>
+                <li><b>Visit Tea Plantations:</b> Tour the scenic tea estates and sample fresh tea at Boh Tea Plantation.</li>
+                <li><b>Explore Mossy Forest:</b> Wander through the mystical moss-covered forest at the highlands' peak.</li>
+                <li><b>Stroll Through Markets:</b> Shop for fresh produce and local crafts at the bustling night markets.</li>
+                <li><b>Discover Strawberry Farms:</b> Pick your own strawberries and enjoy delightful strawberry-based treats.</li>
+            </ul>
+        </div>
+
+        <!-- Tips Section -->
+        <div>
+            <h2>Travel Tips</h2>
+            <ul>
+                <li><b>Dress in Layers:</b> The weather can be cool, so wear layers to stay comfortable.</li>
+                <li><b>Carry Cash:</b> Some local markets and vendors may not accept card payments.</li>
+                <li><b>Prepare for Rain:</b> Pack a raincoat or umbrella as the highlands can experience sudden showers.</li>
+                <li><b>Book Accommodations Early:</b> Cameron Highlands is a popular destination, so book your stay in advance.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub-bottom">
+        <h2>Where to Stay</h2>
+        <div class="grid-container">
+            <!-- Resort 1 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://www.millenniumhotels.com/en/cameron-highlands/copthorne-hotel-cameron-highlands/">
+                        <img src="image/copthrone.jpg" alt="Copthorne Hotel Cameron Highlands">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://www.millenniumhotels.com/en/cameron-highlands/copthorne-hotel-cameron-highlands/" class="title-link">
+                        <h3>Copthorne Hotel Cameron Highlands</h3>
+                    </a>
+                    <p class="description">
+                        Copthorne Cameron Highlands is a 4-star resort in Cameron Highlands featuring a fitness center, garden, terrace, restaurant, indoor pool, and free WiFi. 
+                        The resort offers room service, a 24-hour front desk, and a playground. Some rooms include a kitchen, and a buffet breakfast is served daily.
+                    </p>
+                </div>
+            </div>
+            <!-- Resort 2 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://lakehouse-cameron.com/">
+                        <img src="image/Lakehouse.jpg" alt="The Lakehouse, Cameron Highlands">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://lakehouse-cameron.com/" class="title-link">
+                        <h3>The Lakehouse, Cameron Highlands</h3>
+                    </a>
+                    <p class="description">
+                        The Lakehouse Cameron Highlands offers air-conditioned rooms with modern amenities, a garden, and a restaurant. 
+                        Airport shuttle service is available, with Sultan Azlan Shah Airport 60 miles away.
+                    </p>
+                </div>
+            </div>
+            <!-- Resort 3 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://www.cameronhighlandsresort.com/">
+                        <img src="image/cameronresot.jpg" alt="Cameron Highlands Resort">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://www.cameronhighlandsresort.com/" class="title-link">
+                        <h3>Cameron Highlands Resort</h3>
+                    </a>
+                    <p class="description">
+                        Nestled amidst stunning landscapes and lush hills, Cameron Highlands Resort features charming Tudor-style cottages
+                        and overlooks an 18-hole golf course, making it ideal for exploration and scenic hikes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h2>Share Your Experience</h2>
+        <form id="comment-form">
+            <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
+            <div class="rating">
+                <label for="rating">Rate your experience: </label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+            </div>
+            <button type="submit">Submit Comment</button>
+        </form>
+        <div id="comments-display">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>

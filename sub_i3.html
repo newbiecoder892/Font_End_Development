@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulau Tioman - Discover the Tropical Paradise</title>
+    <link rel="stylesheet" href="csstyle.css">
+    <link rel="stylesheet" href="island-theme.css">
+    <script src="filter.js"></script>
+</head>
+<body>
+   <div class="sub-header">
+        <h1>Pulau Tioman - The Tropical Paradise</h1>
+        <div class="sub-img"><img src="image/tioman.jpg" alt="Pulau Tioman Image"></div>
+   </div>
+
+    <!-- Sub-Middle Section -->
+    <div class="sub-middle">
+        <div class="sub-intro">
+            <p>
+                Experience the untouched beauty of Pulau Tioman, an idyllic island in the South China Sea. 
+                Known for its stunning coral reefs, lush jungles, and pristine beaches, Tioman is a haven for nature lovers and adventure seekers. 
+                Enjoy snorkeling, diving, or simply relaxing on the tranquil shores of this tropical gem.
+            </p>
+            <div class="sub-buttons">
+                <button onclick="window.location.href='https://www.stephmylifetravel.com/pulau-tioman-guide/'">Learn More</button>
+                <button onclick="window.location.href='https://maps.app.goo.gl/HU1dQikNgPcqHxtbA'">Show Location</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities/Attractions Section -->
+    <div class="sub-content">
+        <div>
+            <h2>What to Do in Pulau Tioman</h2>
+            <ul>
+                <li><b>Snorkeling at Coral Reefs:</b> Discover vibrant marine life and colorful corals.</li>
+                <li><b>Explore the Rainforest:</b> Hike through lush jungles and discover hidden waterfalls.</li>
+                <li><b>Relax at Juara Beach:</b> Enjoy serene beach time at one of the island's most beautiful spots.</li>
+                <li><b>Visit Tioman Island Village:</b> Experience local culture and traditional Malay lifestyle.</li>
+            </ul>
+        </div>
+
+        <!-- Tips Section -->
+        <div>
+            <h2>Travel Tips</h2>
+            <ul>
+                <li><b>Prepare for Outdoor Activities:</b> Bring appropriate gear for hiking and snorkeling.</li>
+                <li><b>Respect Nature:</b> Follow guidelines to protect the coral reefs and wildlife.</li>
+                <li><b>Stay Hydrated:</b> Bring plenty of water, especially if you're exploring the island.</li>
+                <li><b>Local Currency:</b> Ensure you have enough cash, as some places may not accept cards.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub-bottom">
+        <h2>Where to Stay</h2>
+        <div class="grid-container">
+            <!-- Resort 1 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://tioman.berjayahotel.com/">
+                        <img src="image/berjayatioman.jpg" alt="Berjaya Tioman">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://tioman.berjayahotel.com/" class="title-link">
+                        <h3>Berjaya Tioman Resort</h3>
+                    </a>
+                    <p class="description">
+                        Berjaya Tioman Resort offers 4-star beachfront accommodations on Tioman Island with an outdoor pool, fitness center, and garden. 
+                        It features air-conditioned rooms, a restaurant, free WiFi, and a kids' club. ABC Beach Jetty is 2.8 miles away.
+                    </p>
+                </div>
+            </div>
+            <!-- Resort 2 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://www.payabeach.com/my/">
+                        <img src="image/payaresort.jpg" alt="Paya">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://www.payabeach.com/my/" class="title-link">
+                        <h3>Paya Beach Resort</h3>
+                    </a>
+                    <p class="description">
+                        Paya Beach Spa & Dive Resort is a 4-star beachfront resort on Tioman Island 
+                        with white sand beaches, coral reefs, and a range of packages including diving, 
+                        spa treatments, and honeymoon options.
+                    </p>
+                </div>
+            </div>
+            <!-- Resort 3 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://www.japamalaresorts.com/">
+                        <img src="image/japalama.jpg" alt="japamala">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://www.japamalaresorts.com/" class="title-link">
+                        <h3>Japamala Resort</h3>
+                    </a>
+                    <p class="description">
+                        Japamala Resort by Samadhi on Tioman Island offers an outdoor pool, garden, bar, and free WiFi.
+                        Rooms include balconies, private bathrooms, and flat-screen TVs. 
+                        The resort serves varied breakfast options and has a restaurant. Snorkeling is available.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h2>Share Your Experience</h2>
+        <form id="comment-form">
+            <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
+            <div class="rating">
+                <label for="rating">Rate your experience: </label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+            </div>
+            <button type="submit">Submit Comment</button>
+        </form>
+        <div id="comments-display">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>
