@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taman Negara - Experience Malaysia's Ancient Rainforest</title>
+    <link rel="stylesheet" href="csstyle.css">
+    <link rel="stylesheet" href="nature-theme.css">
+    <script src="filter.js"></script>
+</head>
+<body>
+   <div class="sub-header">
+        <h1>Taman Negara - Malaysia's Ancient Rainforest</h1>
+        <div class="sub-img"><img src="image/tamannegara.jpg" alt="Taman Negara Image"></div>
+   </div>
+
+    <!-- Sub-Middle Section -->
+    <div class="sub-middle">
+        <div class="sub-intro">
+            <p>
+                Discover Taman Negara, Malaysia's premier national park and one of the world's oldest tropical rainforests. 
+                With its rich biodiversity, Taman Negara offers thrilling experiences such as canopy walks, jungle treks, and river cruises. 
+                Immerse yourself in the lush greenery and encounter exotic wildlife in this natural paradise.
+            </p>
+            <div class="sub-buttons">
+                <button onclick="window.location.href='https://www.tamannegara.asia/'">Learn More</button>
+                <button onclick="window.location.href='https://maps.app.goo.gl/oQUdTcsPK3kKeGVQ7'">Show Location</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities/Attractions Section -->
+    <div class="sub-content">
+        <div>
+            <h2>What to Do in Taman Negara</h2>
+            <ul>
+                <li><b>Canopy Walkway:</b> Experience the rainforest from above on the world's longest canopy walkway.</li>
+                <li><b>Jungle Trekking:</b> Explore the dense forest and discover its diverse flora and fauna.</li>
+                <li><b>River Cruises:</b> Take a boat ride along the Tembeling and Lata Berkoh rivers.</li>
+                <li><b>Wildlife Spotting:</b> Look for Malayan tigers, Asian elephants, and exotic birds in their natural habitat.</li>
+            </ul>
+        </div>
+
+        <!-- Tips Section -->
+        <div>
+            <h2>Travel Tips</h2>
+            <ul>
+                <li><b>Prepare for Rain:</b> Bring waterproof clothing and gear as the rainforest can be very wet.</li>
+                <li><b>Wear Appropriate Footwear:</b> Sturdy hiking boots are recommended for jungle treks.</li>
+                <li><b>Stay Hydrated:</b> Carry enough water and stay hydrated while exploring.</li>
+                <li><b>Respect Wildlife:</b> Keep a safe distance from animals and avoid feeding them.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub-bottom">
+        <h2>Where to Stay</h2>
+        <div class="grid-container">
+            <!-- Resort 1 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://www.mutiaratamannegara.com/">
+                        <img src="image/mutiara.png" alt="Mutiara Taman Negara">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://www.mutiaratamannegara.com/" class="title-link">
+                        <h3>Mutiara Taman Negara Resort</h3>
+                    </a>
+                    <p class="description">
+                        Mutiara Taman Negara in Kuala Tahan features a garden, terrace, restaurant, and bar. Rooms have air conditioning, flat-screen TV, 
+                        and private bathrooms. Some offer river views or balconies. Breakfast options include buffet, American, or Asian.
+                    </p>
+                </div>
+            </div>
+            <!-- Resort 2 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://www.pahangtourism.org.my/index.php/en/accomondation/beach-chalets/taman-negara-chalet/item/283-tebing-guest-house">
+                        <img src="image/tebing.jpg" alt="Tebing Guest House">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://www.pahangtourism.org.my/index.php/en/accomondation/beach-chalets/taman-negara-chalet/item/283-tebing-guest-house" class="title-link">
+                        <h3>Tebing Guest Houset</h3>
+                    </a>
+                    <p class="description">
+                        TEBiNG Guest House Taman Negara offers riverside accommodations with free WiFi in Kuala Tahan, just 656 feet from the jetty to National Park Malaysia.
+                        Some rooms include private bathrooms, and hiking tours are available at an extra cost.
+                    </p>
+                </div>
+            </div>
+            <!-- Resort 3 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://tekomaresort.com/accommodations/">
+                        <img src="image/tekoma.jpg" alt="Tekoma Resort">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://tekomaresort.com/accommodations/" class="title-link">
+                        <h3>Tekoma Resort, Taman Negara</h3>
+                    </a>
+                    <p class="description">
+                        Tekoma Resort Taman Negara in Kuala Tahan features a garden, outdoor pool, free WiFi, 
+                        and a restaurant with various cuisine options. An airport shuttle is available.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h2>Share Your Experience</h2>
+        <form id="comment-form">
+            <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
+            <div class="rating">
+                <label for="rating">Rate your experience: </label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+            </div>
+            <button type="submit">Submit Comment</button>
+        </form>
+        <div id="comments-display">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>

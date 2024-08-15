@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunung Kinabalu - The Majestic Mountain</title>
+    <link rel="stylesheet" href="csstyle.css">
+    <link rel="stylesheet" href="nature-theme.css">
+    <script src="filter.js"></script>
+</head>
+<body>
+   <div class="sub-header">
+        <h1>Gunung Kinabalu - The Majestic Mountain</h1>
+        <div class="sub-img"><img src="image/kinabalu.jpg" alt="Gunung Kinabalu Image"></div>
+   </div>
+
+    <!-- Sub-Middle Section -->
+    <div class="sub-middle">
+        <div class="sub-intro">
+            <p>
+                Experience the awe-inspiring Gunung Kinabalu, the highest peak in Southeast Asia. 
+                Located in Sabah, Malaysia, this majestic mountain is a popular destination for trekkers and nature enthusiasts. 
+                The breathtaking views, diverse flora and fauna, and challenging climb make it a must-visit adventure spot.
+            </p>
+            <div class="sub-buttons">
+                <button onclick="window.location.href='https://www.mountkinabalu.com/'">Learn More</button>
+                <button onclick="window.location.href='https://maps.app.goo.gl/c32H5Zvbm6d6Mmiz5'">Show Location</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities/Attractions Section -->
+    <div class="sub-content">
+        <div>
+            <h2>What to Do at Gunung Kinabalu</h2>
+            <ul>
+                <li><b>Summit Trek:</b> Challenge yourself with the summit trek to experience stunning panoramic views.</li>
+                <li><b>Explore Botanical Gardens:</b> Discover the diverse plant species at the Kinabalu Park Botanical Garden.</li>
+                <li><b>Bird Watching:</b> Observe a variety of bird species in the lush forest surrounding the mountain.</li>
+                <li><b>Visit Poring Hot Springs:</b> Relax in the natural hot springs and explore the nearby canopy walk.</li>
+            </ul>
+        </div>
+
+        <!-- Tips Section -->
+        <div>
+            <h2>Travel Tips</h2>
+            <ul>
+                <li><b>Prepare for Altitude:</b> Acclimate to the altitude to avoid altitude sickness during your climb.</li>
+                <li><b>Pack Proper Gear:</b> Bring suitable trekking gear, including warm clothing and sturdy shoes.</li>
+                <li><b>Stay Hydrated:</b> Drink plenty of water to stay hydrated throughout your trek.</li>
+                <li><b>Book Permits Early:</b> Ensure you book your climbing permits and accommodation well in advance.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sub-bottom">
+        <h2>Where to Stay</h2>
+        <div class="grid-container">
+            <!-- Lodge 1 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://perkasahotel.com.my/perkasa-hotels/perkasa-hotel-mt-kinabalu/">
+                        <img src="image/perkasa.jpg" alt="Perkasa Hotel Mt Kinabalu">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://perkasahotel.com.my/perkasa-hotels/perkasa-hotel-mt-kinabalu/" class="title-link">
+                        <h3>Perkasa Hotel Mt Kinabalu</h3>
+                    </a>
+                    <p class="description">
+                        The Perkasa Hotel Mt. Kinabalu offers a picturesque mountain retreat near Mount Kinabalu with stunning views 
+                        of the lush landscape. Enjoy modern comfort in our newly renovated rooms, complete with stylish furnishings 
+                        and upgraded amenities for a relaxing stay.                    
+                    </p>
+                </div>
+            </div>
+            <!-- Lodge 2 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://mountainvalley.com.my/">
+                        <img src="image/moutainvalley.jpg" alt="Mountain Valley Resort">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://mountainvalley.com.my/" class="title-link">
+                        <h3>Mountain Valley Resort</h3>
+                    </a>
+                    <p class="description">
+                        Mountain Valley Resort, revamped in 2019, offers stylish rooms, stunning views, and excellent dining.
+                        Nestled in Bundu Tuhan at the foot of Mount Kinabalu, 
+                        it combines luxury and eco-tourism for a peaceful retreat.
+                    </p>
+                </div>
+            </div>
+            <!-- Lodge 3 -->
+            <div class="flex-container">
+                <div class="pic">
+                    <a href="https://suterasanctuarylodges.com.my/kinabalu-park/">
+                        <img src="image/kinabalupark.jpg" alt="Kinabalu Park">
+                    </a>
+                </div>
+                <div class="text">
+                    <a href="https://suterasanctuarylodges.com.my/kinabalu-park/" class="title-link">
+                        <h3>Kinabalu Park, Sutera Sanctuary Lodges</h3>
+                    </a>
+                    <p class="description">
+                        Sutera Sanctuary Lodges at Kinabalu Park offers comfortable accommodations in a serene natural setting.
+                        Located at the foot of Mount Kinabalu, it provides easy access to the park's lush landscapes and biodiversity. 
+                        Guests can enjoy cozy lodges, scenic views, and convenient access to hiking trails and park activities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+        <h2>Share Your Experience</h2>
+        <form id="comment-form">
+            <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
+            <div class="rating">
+                <label for="rating">Rate your experience: </label>
+                <select id="rating" name="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                    <option value="2">★★</option>
+                    <option value="1">★</option>
+                </select>
+            </div>
+            <button type="submit">Submit Comment</button>
+        </form>
+        <div id="comments-display">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>
