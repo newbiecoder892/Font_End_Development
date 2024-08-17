@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="website_header">
+        <div class="navbar">
+            <div class="logo"><a href="home_page.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
+                <ul class="links">
+                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="#Food & Drinks">Food & Drinks</a></li>
+                    <li><a class="traditional" href="#traditional">Traditional Grame</a></li>
+                    <li><a class="contact_us" href="#contact_us">About us</a></li>
+                </ul>
+                
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+        </div>
+    </header>
+
+    <div class="wrapper" id="authWrapper">
+        <div class="container-form register" id="signupForm">
+            <h2 class="h2title">Sign Up</h2>
+            <form action="#" onsubmit="storeUser(event)">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" id="firstName"  required>
+                    <label>First Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                    <input type="text" id="lastName"  required>
+                    <label>Last Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email"  required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="Password" required>
+                    <label>Password</label>
+                </div>
+                <div class="rem-for">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="subbtn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="login.html" id="showLogin">Login Now</a></p>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="login.js" defer></script>
+</body>
+</html>
