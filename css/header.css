@@ -2,9 +2,14 @@
     width: 100%;
     background-color: rgb(240, 240, 240);
 }
-
-.website_header li{
+.website_header ul{
+    float: right;
+    margin-right:20px;
+}
+.website_header ul li{
     list-style: none;
+    display:inline-block;
+    margin: 05px;
 }
 .website_header a{
     color:black;
