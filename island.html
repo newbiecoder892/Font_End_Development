@@ -1,109 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Page Title</title>
+    <title>Island and Beaches</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="csstyle.css">
-    <link rel="stylesheet" href="island-theme.css">
-    <script src="filter.js" defer></script>
+    <link rel="stylesheet" href="css/csstyle.css">
+    <link rel="stylesheet" href="css/island-theme.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/natural.js" defer></script>
 </head>
 <body>
+    <header class="website_header">
+        <div class="navbar">
+            <div class="logo"><a href="home_page.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
+                <ul class="links">
+                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="#Food & Drinks">Food & Drinks</a></li>
+                    <li><a class="traditional" href="#traditional">Traditional Grame</a></li>
+                    <li><a class="contact_us" href="#contact_us">About us</a></li>
+                </ul>
+                <a href="#" class="signIn">Sign In</a>
 
-    <div class="video-wrapper">
-        <div class="header">
-            <video id="bg-video" autoplay muted loop>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="dropdown_menu">
+                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="#food_drinks">Food & Drinks</a></li>
+                    <li><a class="festival" href="#festival">Festival & events</a></li>
+                    <li><a class="contact_us" href="#contact_us">Contact us</a></li>
+                    <a href="#" class="signInDropDown">Sign In</a>
+                </div>
+        </div>
+    </header>
+
+    <div class="j_video-wrapper">
+        <div class="j_header">
+            <video id="j_bg-video" autoplay muted loop>
                 <source src="image/island.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     
-        <div class="overview">
+        <div class="j_overview">
             <h2>Islands and Beaches</h2>
-            <p class="overview-text">
+            <p class="j_overview-text">
                 Discover the serenity and adventure that awaits you in Malaysia's islands and beaches. 
                 From pristine shores to breathtaking underwater worlds, every moment promises an unforgettable experience.
             </p>
         </div>
     </div>
     
-    <div class="Top"><h3>Discover the Top Islands and Beaches in Malaysia </h3>
+    <div class="j_Top"><h3>Discover the Top Islands and Beaches in Malaysia </h3>
         <div>
-            <div class="flex-container" data-category="Luxury, Resorts, Watersports">
-                <div class="pic">
+            <div class="j_flex-container" data-category="Luxury, Resorts, Watersports">
+                <div class="j_pic">
                     <a href="sub_i1.html">
                         <img src="image/portdickson.jpeg" alt="Port Dickson">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="sub_i1.html" class="title-link">
+                <div class="j_text">
+                    <a href="sub_i1.html" class="j_title-link">
                         <p class="Att_Title">Port Dickson</p>
                     </a>
-                    <div class="tags"></div>
-                    <p class="description">
+                    <div class="j_tags"></div>
+                    <p class="j_description">
                         Port Dickson is a popular beach destination in Malaysia known for its sandy shores,
                         family-friendly attractions, and water sports. It's perfect for a relaxing seaside escape and enjoying coastal activities.
                     </p>
-                    <p class="location">Location: Negeri Sembilan, Malaysia</p>
+                    <p class="j_location">Location: Negeri Sembilan, Malaysia</p>
                 </div>
             </div>
             
-            <div class="flex-container" data-category="Beaches, Adventure, Luxury">
-                <div class="pic">
+            <div class="j_flex-container" data-category="Beaches, Adventure, Luxury">
+                <div class="j_pic">
                     <a href="sub_i2.html">
                         <img src="image/langkawi.jpeg" alt="Langkawi">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="sub_i2.html" class="title-link">
-                        <p class="Att_Title">Pulau Langkawi</p>
+                <div class="j_text">
+                    <a href="sub_i2.html" class="j_title-link">
+                        <p class="j_Att_Title">Pulau Langkawi</p>
                     </a>
-                    <div class="tags"></div>
-                    <p class="description">
+                    <div class="j_tags"></div>
+                    <p class="j_description">
                         Pulau Langkawi is a tropical gem boasting stunning landscapes,
                         from lush rainforests to majestic waterfalls, and offering a blend of luxury resorts and cultural heritage.
                     </p>
-                    <p class="location">Location: Kedah, Malaysia</p>
+                    <p class="j_location">Location: Kedah, Malaysia</p>
                 </div>
             </div>
             
-            <div class="flex-container" data-category="Snorkeling, Diving, Trekking">
-                <div class="pic">
+            <div class="j_flex-container" data-category="Snorkeling, Diving, Trekking">
+                <div class="j_pic">
                     <a href="sub_i3.html">
                         <img src="image/tioman.jpg" alt="Pulau Tioman">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="sub_i3.html" class="title-link">
+                <div class="j_text">
+                    <a href="sub_i3.html" class="j_title-link">
                         <p class="Att_Title">Pulau Tioman</p>
                     </a>
-                    <div class="tags"></div>
-                    <p class="description">
+                    <div class="j_tags"></div>
+                    <p class="j_description">
                         Pulau Tioman is a tranquil island getaway with emerald waters, lush jungles, and a rich marine life, 
                         making it a haven for nature lovers and adventure seekers.
                     </p>
-                    <p class="location"> Location: Pahang, Malaysia</p>
+                    <p class="j_location"> Location: Pahang, Malaysia</p>
                 </div>
             </div>
             
         </div>
     </div> 
     
-    <div class="guide">
+    <div class="j_guide">
         <h3>Marine Explorations</h3>
-        <div class="activities-container">
+        <div class="j_activities-container">
             <div class="activity">
-                <div class="activity-content">
-                    <div class="content-text">
-                        <div class="activity-title">Underwater Exploration</div>
+                <div class="j_activity-content">
+                    <div class="j_content-text">
+                        <div class="j_activity-title">Underwater Exploration</div>
                         <ul>
                             <li>Discover vibrant marine life with snorkeling and scuba diving.</li>
                             <li>Explore crystal-clear waters teeming with colorful fish.</li>
                             <li>Experience the beauty of coral reefs up close.</li>
                         </ul>
                     </div>
-                    <div class="content-image">
-                        <div class="content-image-wrapper">
+                    <div class="j_content-image">
+                        <div class="j_content-image-wrapper">
                             <img src="image/underwater1.jpg" alt="Jet Skiing">
                             <img src="image/underwater2.jpeg" alt="Island Exploration">
                             <img src="image/underwater3.jpeg" alt="Island Exploration">
@@ -114,18 +139,18 @@
                 </div>
             </div>
         
-            <div class="activity">
-                <div class="activity-content">
-                    <div class="content-text">
-                        <div class="activity-title">Water Adventures</div>
+            <div class="j_activity">
+                <div class="j_activity-content">
+                    <div class="j_content-text">
+                        <div class="j_activity-title">Water Adventures</div>
                         <ul>
                             <li>Enjoy thrilling water sports like kayaking and jet skiing.</li>
                             <li>Feel the rush of adrenaline on a high-speed jet ski ride.</li>
                             <li>Navigate through mangroves and explore hidden lagoons.</li>
                         </ul>
                     </div>
-                    <div class="content-image">
-                        <div class="content-image-wrapper">
+                    <div class="j_content-image">
+                        <div class="j_content-image-wrapper">
                             <img src="image/wateradv1.jpg" alt="Jet Skiing">
                             <img src="image/wateradv2.jpeg" alt="Island Exploration">
                             <img src="image/wateradv3.jpg" alt="Island Exploration">
@@ -135,18 +160,18 @@
                     </div>
                 </div>
             </div>
-            <div class="activity">
-                <div class="activity-content">
-                    <div class="content-text">
-                        <div class="activity-title">Island Exploration</div>
+            <div class="j_activity">
+                <div class="j_activity-content">
+                    <div class="j_content-text">
+                        <div class="j_activity-title">Island Exploration</div>
                         <ul>
                             <li>Travel between islands to explore diverse landscapes.</li>
                             <li>Observe local wildlife, including exotic birds and reptiles.</li>
                             <li>Experience the unique cultures of different island communities.</li>
                         </ul>
                     </div>
-                    <div class="content-image">
-                        <div class="content-image-wrapper">
+                    <div class="j_content-image">
+                        <div class="j_content-image-wrapper">
                             <img src="image/islandexplore1.jpeg" alt="Jet Skiing">
                             <img src="image/islandexplore2.jpg" alt="Island Exploration">
                             <img src="image/islandexplore3.png" alt="Island Exploration">
@@ -162,73 +187,73 @@
     </div>
     
     
-    <div class="middle">
-        <div class="head-middle">Explore These Stunning Islands</div>
+    <div class="j_middle">
+        <div class="j_head-middle">Explore These Stunning Islands</div>
        
         <br>
-        <div class="content">
-            <div id="content-wrapper" class="grid-container">
-                <div class="flex-container" data-category="Snorkeling, Diving, Beachfront">
-                    <div class="pic">
+        <div class="j_content">
+            <div id="content-wrapper" class="j_grid-container">
+                <div class="j_flex-container" data-category="Snorkeling, Diving, Beachfront">
+                    <div class="j_pic">
                         <a href="https://www.govisitredang.com/">
                             <img src="image/redang.jpeg" alt="Pulau Redang">
                         </a>
                     </div>
-                    <div class="text">
-                        <a href="https://www.govisitredang.com/" class="title-link">
+                    <div class="j_text">
+                        <a href="https://www.govisitredang.com/" class="j_title-link">
                             <p class="Att_Title">Pulau Redang</p>
                         </a>
-                        <div class="tags"></div>
-                        <p class="description">
+                        <div class="j_tags"></div>
+                        <p class="j_description">
                             A pristine paradise known for its crystal-clear waters, vibrant coral reefs,
                             and serene beaches, perfect for snorkeling and diving enthusiasts.
                         </p>
                         
                         <!-- Location section -->
-                        <p class="location"> Location: Terengganu, Malaysia</p>
+                        <p class="j_location"> Location: Terengganu, Malaysia</p>
                 
 
                     </div>
                 </div>
-                <div class="flex-container" data-category="Diving, Marine Life, Luxury">
-                    <div class="pic">
+                <div class="j_flex-container" data-category="Diving, Marine Life, Luxury">
+                    <div class="j_pic">
                         <a href="https://www.sipadan.com/index.php">
                             <img src="image/sipandan.jpg" alt="Pulau Sipadan">
                         </a>
                     </div>
-                    <div class="text">
-                        <a href="https://www.sipadan.com/index.php" class="title-link">
+                    <div class="j_text">
+                        <a href="https://www.sipadan.com/index.php" class="j_title-link">
                             <p class="Att_Title">Pulau Sipadan</p>
                         </a>
-                        <div class="tags"></div>
-                        <p class="description">
+                        <div class="j_tags"></div>
+                        <p class="j_description">
                             Pulau Sipadan is a top diving spot in Malaysia, famous for its clear waters, diverse marine life, 
                             and vibrant coral reefs. It's ideal for underwater adventures and natural beauty.
                         </p>               
-                        <p class="location">Location: Sabah, Malaysia</p>
+                        <p class="j_location">Location: Sabah, Malaysia</p>
                 
 
                     </div>
                 </div>
                 
 
-                <div class="flex-container" data-category="Diving, Snorkeling, Eco-Tourism">
-                    <div class="pic">
+                <div class="j_flex-container" data-category="Diving, Snorkeling, Eco-Tourism">
+                    <div class="j_pic">
                         <a href="https://www.mabul.com/">
                             <img src="image/mabulisland.jpg" alt="Pulau Mabul">
                         </a>
                     </div>
-                    <div class="text">
-                        <a href="https://www.mabul.com/" class="title-link">
-                            <p class="Att_Title">Pulau Mabul</p>
+                    <div class="j_text">
+                        <a href="https://www.mabul.com/" class="j_title-link">
+                            <p class="j_Att_Title">Pulau Mabul</p>
                         </a>
-                        <div class="tags"></div>
-                        <p class="description">
+                        <div class="j_tags"></div>
+                        <p class="j_description">
                             Divers from around the globe visit Mabul year-round to explore its vibrant reefs, pelagics, 
                             and colorful fish, while also seeking out the diverse 
                             and often rare macro marine life that thrives in its waters.
                         </p>
-                        <p class="location"></span>Location: Sabah, Malaysia</p>
+                        <p class="j_location"></span>Location: Sabah, Malaysia</p>
                 
 
                     </div>

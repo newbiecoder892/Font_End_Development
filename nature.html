@@ -4,105 +4,132 @@
     <title>Nature and Adventure</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="csstyle.css">
-    <link rel="stylesheet" href="nature-theme.css">
-    <script src="filter.js" defer></script>
+    <link rel="stylesheet" href="css/csstyle.css">
+    <link rel="stylesheet" href="css/nature-theme.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/natural.js" defer></script>
 </head>
-<body>
 
-    <div class="video-wrapper">
-        <div class="header">
-            <video id="bg-video" autoplay muted loop>
+<body>
+    <header class="website_header">
+        <div class="navbar">
+            <div class="logo"><a href="home_page.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
+                <ul class="links">
+                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="#Food & Drinks">Food & Drinks</a></li>
+                    <li><a class="traditional" href="#traditional">Traditional Grame</a></li>
+                    <li><a class="contact_us" href="#contact_us">About us</a></li>
+                </ul>
+                <a href="#" class="signIn">Sign In</a>
+
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="dropdown_menu">
+                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="#food_drinks">Food & Drinks</a></li>
+                    <li><a class="festival" href="#festival">Festival & events</a></li>
+                    <li><a class="contact_us" href="#contact_us">Contact us</a></li>
+                    <a href="#" class="signInDropDown">Sign In</a>
+                </div>
+        </div>
+    </header>
+    
+
+    <div class="j_video-wrapper">
+        <div class="j_header">
+            <video id="j_bg-video" autoplay muted loop>
                 <source src="image/nature.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     
-        <div class="overview">
+        <div class="j_overview">
             <h2>Nature and Adventure</h2>
-            <p class="overview-text">Explore the breathtaking beauty and exhilarating adventures awaiting you in Malaysia's natural landscapes. From towering mountains to lush jungles and mysterious caves, every destination promises an unforgettable experience.</p>
+            <p class="j_overview-text">Explore the breathtaking beauty and exhilarating adventures awaiting you in Malaysia's natural landscapes. From towering mountains to lush jungles and mysterious caves, every destination promises an unforgettable experience.</p>
         </div>
     </div>
     
-    <div class="Top">
+    <div class="j_Top">
         <h3>Discover the Top Nature Spots in Malaysia</h3>
         <div>
-            <div class="flex-container" data-category="Mountains, Hiking, Scenic Views">
-                <div class="pic">
+            <div class="j_flex-container" data-category="Mountains, Hiking, Scenic Views">
+                <div class="j_pic">
                     <a href="sub_n1.html">
                         <img src="image/kinabalu.jpg" alt="Gunung Kinabalu">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="sub_n1.html" class="title-link">
-                        <p class="Att_Title">Mount Kinabalu</p>
+                <div class="j_text">
+                    <a href="sub_n1.html" class="j_title-link">
+                        <p class="j_Att_Title">Mount Kinabalu</p>
                     </a>
-                    <div class="tags"></div>
-                    <p class="description">
+                    <div class="j_tags"></div>
+                    <p class="j_description">
                         Gunung Kinabalu, Southeast Asia's highest peak, offers breathtaking views and diverse ecosystems.
                          A UNESCO World Heritage site, it's a paradise for hikers 
                          and nature enthusiasts, showcasing Malaysia's rich biodiversity.                    
                     </p>
-                    <p class="location">Location: Sabah, Malaysia</p>
+                    <p class="j_location">Location: Sabah, Malaysia</p>
                 </div>
             </div>
             
-            <div class="flex-container" data-category="Forests, Wildlife, Adventure">
-                <div class="pic">
+            <div class="j_flex-container" data-category="Forests, Wildlife, Adventure">
+                <div class="j_pic">
                     <a href="sub_n2.html">
                         <img src="image/tamannegara.jpg" alt="Taman Negara">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="sub_n2.html" class="title-link">
-                        <p class="Att_Title">Taman Negara</p>
+                <div class="j_text">
+                    <a href="sub_n2.html" class="j_title-link">
+                        <p class="j_Att_Title">Taman Negara</p>
                     </a>
-                    <div class="tags"></div>
-                    <p class="description">
+                    <div class="j_tags"></div>
+                    <p class="j_description">
                         Taman Negara, Malaysia's oldest national park, offers an extraordinary adventure with its ancient rainforest, 
                         canopy walkways, and abundant wildlife including Malayan tigers and exotic birds.
                     </p>
-                    <p class="location">Location: Pahang, Malaysia</p>
+                    <p class="j_location">Location: Pahang, Malaysia</p>
                 </div>
             </div>
             
-            <div class="flex-container" data-category="Hills, Tea Plantations, Cool Climate">
-                <div class="pic">
+            <div class="j_flex-container" data-category="Hills, Tea Plantations, Cool Climate">
+                <div class="j_pic">
                     <a href="sub_n3.html">
                         <img src="image/cameron.jpg" alt="Cameron Highlands">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="sub_n3.html" class="title-link">
-                        <p class="Att_Title">Cameron Highlands</p>
+                <div class="j_text">
+                    <a href="sub_n3.html" class="j_title-link">
+                        <p class="j_Att_Title">Cameron Highlands</p>
                     </a>
-                    <div class="tags"></div>
-                    <p class="description">
+                    <div class="j_tags"></div>
+                    <p class="j_description">
                         The Cameron Highlands is a refreshing highland retreat known for its tea plantations, rolling hills, 
                         and cool climate. It's perfect for hiking, sightseeing, and exploring lush green landscapes.
                     </p>
-                    <p class="location">Location: Pahang, Malaysia</p>
+                    <p class="j_location">Location: Pahang, Malaysia</p>
                 </div>
             </div>
             
         </div>
     </div> 
     
-    <div class="guide">
+    <div class="j_guide">
         <h3>Wilderness Adventures</h3>
-        <div class="activities-container">
-            <div class="activity">
-                <div class="activity-content">
-                    <div class="content-text">
-                        <div class="activity-title">Mountain Climbing</div>
+        <div class="j_activities-container">
+            <div class="j_activity">
+                <div class="j_activity-content">
+                    <div class="j_content-text">
+                        <div class="j_activity-title">Mountain Climbing</div>
                         <ul>
                             <li>Scale Malaysia's majestic peaks and enjoy panoramic views.</li>
                             <li>Experience the thrill of conquering challenging trails.</li>
                             <li>Explore the unique flora and fauna of mountainous regions.</li>
                         </ul>
                     </div>
-                    <div class="content-image">
-                        <div class="content-image-wrapper">
+                    <div class="j_content-image">
+                        <div class="j_content-image-wrapper">
                             <img src="image/moutain1.jpg" alt="Mountain Climbing 1">
                             <img src="image/moutain2.jpg" alt="Mountain Climbing 2">
                             <img src="image/moutain3.jpg" alt="Mountain Climbing 3">
@@ -113,18 +140,18 @@
                 </div>
             </div>
         
-            <div class="activity">
-                <div class="activity-content">
-                    <div class="content-text">
-                        <div class="activity-title">Cave Exploration</div>
+            <div class="j_activity">
+                <div class="j_activity-content">
+                    <div class="j_content-text">
+                        <div class="j_activity-title">Cave Exploration</div>
                         <ul>
                             <li>Discover Malaysia's incredible underground cave systems.</li>
                             <li>Admire stunning stalactites and stalagmites formations.</li>
                             <li>Learn about the geology and history of each cave.</li>
                         </ul>
                     </div>
-                    <div class="content-image">
-                        <div class="content-image-wrapper">
+                    <div class="j_content-image">
+                        <div class="j_content-image-wrapper">
                             <img src="image/cave1.jpg" alt="Cave 1">
                             <img src="image/cave2.jpg" alt="Cave 2">
                             <img src="image/cave3.jpg" alt="Cave 3">
@@ -135,18 +162,18 @@
                     </div>
                 </div>
             </div>
-            <div class="activity">
-                <div class="activity-content">
-                    <div class="content-text">
-                        <div class="activity-title">Forest Trails</div>
+            <div class="j_activity">
+                <div class="j_activity-content">
+                    <div class="j_content-text">
+                        <div class="j_activity-title">Forest Trails</div>
                         <ul>
                             <li>Hike through Malaysia's lush forests and jungles.</li>
                             <li>Encounter exotic wildlife and diverse plant species.</li>
                             <li>Enjoy peaceful walks and nature photography opportunities.</li>
                         </ul>
                     </div>
-                    <div class="content-image">
-                        <div class="content-image-wrapper">
+                    <div class="j_content-image">
+                        <div class="j_content-image-wrapper">
                             <img src="image/forest1.jpeg" alt="Forest 1">
                             <img src="image/forest2.jpeg" alt="Forest 2">
                             <img src="image/forest3.jpg" alt="Forest 3">
@@ -159,64 +186,64 @@
         </div>
     </div>
     
-    <div class="middle">
-        <div class="head-middle">Explore These Natural Wonders</div>
+    <div class="j_middle">
+        <div class="j_head-middle">Explore These Natural Wonders</div>
        
         <br>
-        <div class="content">
-            <div id="content-wrapper" class="grid-container">
-                <div class="flex-container" data-category="Nature Reserve, Wildlife, Biodiversity">
-                    <div class="pic">
+        <div class="j_content">
+            <div id="content-wrapper" class="j_grid-container">
+                <div class="j_flex-container" data-category="Nature Reserve, Wildlife, Biodiversity">
+                    <div class="j_pic">
                         <a href="https://danumvalley.net/">
                             <img src="image/danumvalley.jpeg" alt="Danum Valley">
                         </a>
                     </div>
-                    <div class="text">
-                        <a href="https://danumvalley.net/" class="title-link">
-                            <p class="Att_Title">Danum Valley Conservation Area</p>
+                    <div class="j_text">
+                        <a href="https://danumvalley.net/" class="j_title-link">
+                            <p class="j_Att_Title">Danum Valley Conservation Area</p>
                         </a>
-                        <div class="tags"></div>
-                        <p class="description">
+                        <div class="j_tags"></div>
+                        <p class="j_description">
                             Danum Valley is nature's paradise! Dive into the heart of an untouched rainforest, 
                             encounter rare wildlife, and embark on thrilling treks through ancient greenery.
                         </p>
-                        <p class="location">Location: Sabah, Malaysia</p>
+                        <p class="j_location">Location: Sabah, Malaysia</p>
                     </div>
                 </div>
-                <div class="flex-container" data-category="Rainforests, Caves, Adventure">
-                    <div class="pic">
+                <div class="j_flex-container" data-category="Rainforests, Caves, Adventure">
+                    <div class="j_pic">
                         <a href="https://mulupark.com/">
                             <img src="image/mulupark.jpg" alt="Mulu Park">
                         </a>
                     </div>
-                    <div class="text">
-                        <a href="https://mulupark.com/" class="title-link">
-                            <p class="Att_Title">Mulu National Park</p>
+                    <div class="j_text">
+                        <a href="https://mulupark.com/" class="j_title-link">
+                            <p class="j_Att_Title">Mulu National Park</p>
                         </a>
-                        <div class="tags"></div>
-                        <p class="description">
+                        <div class="j_tags"></div>
+                        <p class="j_description">
                             Mulu National Park is an adventurer's dream! Explore awe-inspiring caves, trek the towering Pinnacles, 
                             and immerse yourself in a vibrant rainforest alive with unique wildlife. 
                         </p>
-                        <p class="location">Location: Sarawak, Malaysia</p>
+                        <p class="j_location">Location: Sarawak, Malaysia</p>
                     </div>
                 </div>
-                <div class="flex-container" data-category="Hills, Scenic Views, Chill">
-                    <div class="pic">
+                <div class="j_flex-container" data-category="Hills, Scenic Views, Chill">
+                    <div class="j_pic">
                         <a href="https://penanghill.gov.my/index.php/en/">
                             <img src="image/penanghill.jpg" alt="Penang Hill">
                         </a>
                     </div>
-                    <div class="text">
-                        <a href="https://penanghill.gov.my/index.php/en/" class="title-link">
-                            <p class="Att_Title">Penang Hill</p>
+                    <div class="j_text">
+                        <a href="https://penanghill.gov.my/index.php/en/" class="j_title-link">
+                            <p class="j_Att_Title">Penang Hill</p>
                         </a>
-                        <div class="tags"></div>
-                        <p class="description">
+                        <div class="j_tags"></div>
+                        <p class="j_description">
                             Penang Hill promises breathtaking views and a refreshing escape! Hop on the historic funicular, explore vibrant
                             rainforests, and discover exciting attractions like The Habitat.
                         </p>
-                        <p class="location">Location: Penang, Malaysia</p>
+                        <p class="j_location">Location: Penang, Malaysia</p>
                     </div>
                 </div>
             </div>

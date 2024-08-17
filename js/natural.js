@@ -1,28 +1,21 @@
 
 function populateTags() {
-  const sections = document.querySelectorAll('.flex-container');
+  const sections = document.querySelectorAll('.j_flex-container');
 
   sections.forEach(section => {
       const categories = section.getAttribute('data-category').split(',').map(cat => cat.trim());
-      const tagsContainer = section.querySelector('.tags');
+      const tagsContainer = section.querySelector('.j_tags');
 
       tagsContainer.innerHTML = '';
 
       categories.forEach(category => {
           const tag = document.createElement('span');
-          tag.className = 'tag';
+          tag.className = 'j_tag';
           tag.textContent = category;
           tagsContainer.appendChild(tag);
       });
   });
 }
-document.querySelectorAll('.activity').forEach(activity => {
-  activity.addEventListener('click', function() {
-    // Logic to handle click event, e.g., displaying a larger version of the image
-    const imgSrc = this.querySelector('.content-image img').src;
-    window.open(imgSrc, '_blank'); // Opens the image in a new tab
-  });
-});
 
 populateTags();
 
