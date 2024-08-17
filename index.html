@@ -4,7 +4,9 @@
         <meta charset="utf-8"/>
         <mate name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Discover Malaysia </title>
-        <link rel="stylesheet" href="css/*">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/index.css">
+
         <!--font awesome-->
         <link 
             rel="stylesheet" 
@@ -19,6 +21,62 @@
     <body>
         <!--swiper-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="js/*"></script>
+        
+        <header class="website_header">
+            <div class="navbar">
+                <div class="logo"><a href="home_page.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
+                <ul class="h_links">
+                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="#local_food">Food & Drinks</a></li>
+                    <li><a class="traditional" href="#trad_game">Traditional Grame</a></li>
+                    <li><a class="contact_us" href="#contact_us">About us</a></li>
+                </ul>
+                <a href="#" class="signIn">Sign In</a>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        
+        <div id="travel_guide" class="traveGuideSection">
+            <div class="travelGuideImage">
+                <img src="k_images/Main_KL scene.jpg">
+                <div class="content">
+                    <h1>TRAVEL GUIDE</h1>
+                    <ul><a href="#">Learn More</a>
+                        <ul class="k_dropdown">
+                            <li><a href="nature.html">Nature</a></li>
+                            <li><a href="island.html">Island</a></li>
+                            <li><a href="themePark.html">Theme Park</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="local_food" class="localFoodSection">
+            <img src="k_images/home-food-drinks.jpg">
+            <div class="content2">
+                <a href="localFood.html"><h1>LOCAL FOOD</h1></a>
+            </div>
+        </div>
+
+        <div id="trad_game" class="tradGameSection">
+            <img src="k_images/home-trad.png">
+            <div class="content3">
+                <a href="traditionalGame.html"><h1>TRADITIONAL GAME</h1></a>
+            </div>
+        </div>
+        <script>
+            const toggleBtn = document.querySelector(".toggle_btn");
+            const dropdownMenu = document.querySelector(".dropdown_menu");
+
+            toggleBtn.onclick = function(){
+                dropdownMenu.classList.toggle('open');
+                const isOpen = dropDownMenu.classList.contains('open');
+
+            }
+
+        </script>
     </body>
 </html>

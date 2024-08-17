@@ -1,6 +1,9 @@
+.website_header{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
 
 .website_header li{
-
     list-style: none;
 }
 .website_header a{
@@ -93,7 +96,7 @@
     scale: 1.02;
     transition: 0.3s;
 }
-.website_header .navbar .links{
+.website_header .navbar .h_links{
     display:flex;
     gap: 2rem;
 }
@@ -185,4 +188,22 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.website_header .toggle_btn{
+    display: none;
+}
+
+@media(max-width: 850px){
+    
+    .website_header li, .website_header  .signIn
+    {
+        display: none;
+    }
+
+    .website_header .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
 }
