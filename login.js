@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isFound) {
             alert('Login Successful!!!');
             setLoginCookie('true');
-            window.location.href = 'home_page.html'; // Redirect to the main page
+            window.location.href = 'index.html'; // Redirect to the main page
         } else {
             alert('Invalid Email or Password, Please Try Again');
             // Optionally, redirect back to the login page or show an error
