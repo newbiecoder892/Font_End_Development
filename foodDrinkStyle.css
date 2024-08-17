@@ -1,0 +1,272 @@
+.pacifico-regular {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Kalam: CSS Classes */
+  .kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  /* End of Kalam: CSS Classes */
+  
+
+  h1 {
+    text-align: center;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 56px;
+  }
+ 
+  html {
+    margin: 0;
+    padding: 0;
+    background: url('Images/foodDrinkBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    scrollbar-width: none; /*This is used to hide the scrollbar in Firefox */
+}
+
+html::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Black color with 50% opacity */
+    z-index: -1; /* Ensures that the overlay is behind all other content */
+}
+
+header, nav, .t_section, .t_like-container, button {
+    position: relative;
+    z-index: 1; /* Ensures content is above the overlay */
+}
+
+
+  /* This part of code is for the wrapping of each image in a circle. */
+  .t_image-container {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  .t_circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .t_circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .t_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(211, 183, 183, 0.45);
+    /* 
+    "0.5" is used to set the background-colour to semi-transparent, 
+    so that the text on top of the image can be shown more clearly. 
+    */
+  }
+  
+  .t_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-size: 23px;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    opacity : 0;
+  }
+
+  .t_circle:hover .t_overlay, .t_circle:hover .t_text {
+    /* Only display the text when the mouse is hovered on it. */
+    opacity: 1;
+  }
+
+  /* This portion of code is for slider elements. */
+
+#t_slider {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#t_slider::-webkit-scrollbar {
+    /* This code is used to hide the scrollbar for Chrome, Safari and Opera. */
+    display: none; 
+} 
+
+.t_content-section {
+    width: device-width;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.t_image {
+    border-radius: 15px;
+    object-fit: cover;
+    height: 450px;
+    width: 800px;
+    transition: all 0.3s ease-in-out;
+}
+
+.t_content-desc {
+    position: absolute;
+    top: 50%;
+    left: 1.8%; /* Start text at the left edge */
+    transform: translateY(-50%);
+    color: black;
+    text-align: justify; /* Align text to the left */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 500px;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+}
+  
+.t_content-section:hover .t_image {
+    opacity: 0.75;
+    transform: translateX(70%);
+    /*translateX is used to adjust the value for desired movement.*/
+}
+
+.t_content-section:hover .t_content-desc {
+    opacity: 1;
+    transform: translate(0, -50%); 
+ }
+
+.t_name::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 82.9%;
+    transform: translate(-50%, -50%);
+    font-family: "Kalam", cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 1;
+    z-index: 3;
+}
+
+
+/* Styles for like count */
+.t_like-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.t_like-btn {
+    padding: 5px 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Kalam', cursive;
+}
+
+.t_like-btn:hover {
+    background-color: #ff4500;
+}
+
+.t_like-count {
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: 'Kalam', cursive;
+}
+
+
+/* Styles for back to top button */
+.t_back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px; 
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+    font-weight: bolder;
+    z-index: 10;
+}
+
+.t_back-to-top:hover {
+    background-color: #ff4500;
+}
+
+
+/* Styles for tablet and mobile screens */
+@media (max-width: 810px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .t_circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .t_text {
+        font-size: 18px;
+    }
+
+    .t_image {
+        height: 300px;
+        width: 100%;
+    }
+
+    .t_content-section:hover .t_image {
+        opacity: 0.45;
+        transform: none; 
+        /*So that the image will not move to the right.*/
+    }
+
+    .t_name::before {
+        display: none;
+    }
+
+    .t_content-desc {
+        font-size: 16px;
+        width: 93%;
+    }
+
+    .t_back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
