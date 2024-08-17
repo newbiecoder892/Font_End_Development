@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Langkawi - Explore the Jewel of Kedah</title>
-    <link rel="stylesheet" href="csstyle.css">
-    <link rel="stylesheet" href="island-theme.css">
-    <script src="filter.js"></script>
+    <link rel="stylesheet" href="css/csstyle.css">
+    <link rel="stylesheet" href="css/island-theme.css">
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=66bffc3486267000198d463a&product=sticky-share-buttons&source=platform" async="async"></script>
+    <script src="js/natural.js"></script>
 </head>
 <body>
-   <div class="sub-header">
+   <div class="j_sub-header">
         <h1>Langkawi - The Jewel of Kedah</h1>
-            <div class="sub-img"><img src="image/langkawi2.jpg"></div>
+            <div class="j_sub-img"><img src="image/langkawi2.jpg"></div>
    </div>
-
+   <div class="sharethis-sticky-share-buttons"></div>
     <!-- Sub-Middle Section -->
-    <div class="sub-middle">
+    <div class="j_sub-middle">
         
-        <div class="sub-intro">
+        <div class="j_sub-intro">
             <p>
                 Discover Langkawi, a breathtaking archipelago of 99 islands in the Andaman Sea. 
                 Known as the Jewel of Kedah, Langkawi offers an enticing blend of natural beauty and thrilling adventures. 
                 Relax on pristine beaches, explore lush rainforests, or dive into vibrant coral reefs.
             </p>
-            <div class="sub-buttons">
+            <div class="j_sub-buttons">
                 <button onclick="window.location.href='https://naturallylangkawi.my/'">Learn More</button>
                 <button onclick="window.location.href='https://maps.app.goo.gl/Sn58GrnjPFYZDHyV7'">Show Location</button>
             </div>
@@ -32,7 +33,7 @@
     </div>
 
     <!-- Activities/Attractions Section -->
-    <div class="sub-content">
+    <div class="j_sub-content">
         <div>
             <h2>What to Do in Langkawi</h2>
             <ul>
@@ -54,57 +55,55 @@
             </ul>
         </div>
     </div>
-    <div class="sub-bottom">
+    <!-- Accommodations section -->
+    <div class="j_sub-bottom">
         <h2>Where to Stay</h2>
-        <div class="grid-container">
-            <!-- Resort 1 -->
-            <div class="flex-container">
-                <div class="pic">
+        <div class="j_grid-container">
+            <div class="j_flex-container">
+                <div class="j_pic">
                     <a href="https://www.thedatai.com/">
                         <img src="image/datailangkawi.jpg" alt="Datai">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="https://www.thedatai.com/" class="title-link">
+                <div class="j_text">
+                    <a href="https://www.thedatai.com/" class="j_title-link">
                         <h3>The Datai Langkawi</h3>
                     </a>
-                    <p class="description">
+                    <p class="j_description">
                         The Datai Langkawi in Teluk Datai offers mountain-view rooms, free bikes, parking, and an outdoor pool. 
                         Guests can enjoy a range of dining options, activities like windsurfing and canoeing, and amenities such 
                         as a fitness center, garden, and bar. It's a short walk from Datai Bay Beach.
                     </p>
                 </div>
             </div>
-            <!-- Resort 2 -->
-            <div class="flex-container">
-                <div class="pic">
+            <div class="j_flex-container">
+                <div class="j_pic">
                     <a href="https://www.fourseasons.com/langkawi/">
                         <img src="image/fourseason.jpg" alt="Four Season">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="https://www.fourseasons.com/langkawi/" class="title-link">
+                <div class="j_text">
+                    <a href="https://www.fourseasons.com/langkawi/" class="j_title-link">
                         <h3>Four Seasons Resort Langkawi</h3>
                     </a>
-                    <p class="description">
+                    <p class="j_description">
                         Four Seasons Resort Langkawi, located a short walk from Kastam Beach, offers free bikes, private parking, 
                         an outdoor pool, and a fitness center. Guests enjoy air-conditioned rooms, a variety of breakfast options, 
                         and facilities like a kids' club, tennis courts, and water sports.
                     </p>
                 </div>
             </div>
-            <!-- Resort 3 -->
-            <div class="flex-container">
-                <div class="pic">
+            <div class="j_flex-container">
+                <div class="j_pic">
                     <a href="https://the-andaman-langkawi.hotel-rez.com/">
                         <img src="image/andaman.jpg" alt="Andaman">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="https://the-andaman-langkawi.hotel-rez.com/" class="title-link">
+                <div class="j_text">
+                    <a href="https://the-andaman-langkawi.hotel-rez.com/" class="j_title-link">
                         <h3>The Andaman, a Luxury Collection Resort</h3>
                     </a>
-                    <p class="description">
+                    <p class="j_description">
                         The Andaman, Langkawi is a luxurious resort on Datai Bay, featuring a private beach, lush rainforest, 
                         and elegant rooms with stunning views. It offers top-notch dining, a golf course, water sports, and a spa, 
                         all 40 minutes from Langkawi International Airport with free parking and shuttle service.
@@ -114,11 +113,11 @@
     </div>
 
     <!-- Comment Section -->
-    <div class="comment-section">
+    <div class="j_comment-section">
         <h2>Share Your Experience</h2>
         <form id="comment-form">
             <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
-            <div class="rating">
+            <div class="j_rating">
                 <label for="rating">Rate your experience: </label>
                 <select id="rating" name="rating">
                     <option value="5">★★★★★</option>
@@ -133,6 +132,7 @@
         <div id="comments-display">
         </div>
     </div>
+    
 
     <!-- Footer Section -->
     <div class="footer">

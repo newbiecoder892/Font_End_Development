@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cameron Highlands - Discover the Cool Retreat</title>
-    <link rel="stylesheet" href="csstyle.css">
-    <link rel="stylesheet" href="nature-theme.css">
-    <script src="filter.js"></script>
+    <link rel="stylesheet" href="css/csstyle.css">
+    <link rel="stylesheet" href="css/nature-theme.css">
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=66bffc3486267000198d463a&product=sticky-share-buttons&source=platform" async="async"></script>
+    <script src="js/natural.js"></script>
 </head>
 <body>
-   <div class="sub-header">
+   <div class="j_sub-header">
         <h1>Cameron Highlands - Discover the Cool Retreat</h1>
-        <div class="sub-img"><img src="image/cameron.jpg" alt="Cameron Highlands Image"></div>
+        <div class="j_sub-img"><img src="image/cameron.jpg" alt="Cameron Highlands Image"></div>
    </div>
+   
+   <div class="sharethis-sticky-share-buttons"></div>
+
 
     <!-- Sub-Middle Section -->
-    <div class="sub-middle">
-        <div class="sub-intro">
+    <div class="j_sub-middle">
+        <div class="j_sub-intro">
             <p>
                 Explore Cameron Highlands, Malaysia's premier hill station, known for its cool climate and lush landscapes. 
                 Nestled in the mountains, Cameron Highlands offers stunning tea plantations, picturesque farms, and vibrant markets. 
                 Enjoy a serene retreat and explore the scenic beauty of this highland paradise.
             </p>
-            <div class="sub-buttons">
+            <div class="j_sub-buttons">
                 <button onclick="window.location.href='https://www.cameronhighland.net/'">Learn More</button>
                 <button onclick="window.location.href='https://maps.app.goo.gl/8EnuFVF8isJRV2mE7'">Show Location</button>
             </div>
@@ -30,7 +34,7 @@
     </div>
 
     <!-- Activities/Attractions Section -->
-    <div class="sub-content">
+    <div class="j_sub-content">
         <div>
             <h2>What to Do in Cameron Highlands</h2>
             <ul>
@@ -52,56 +56,53 @@
             </ul>
         </div>
     </div>
-
-    <div class="sub-bottom">
+    <!-- Accommodations section -->
+    <div class="j_sub-bottom">
         <h2>Where to Stay</h2>
-        <div class="grid-container">
-            <!-- Resort 1 -->
-            <div class="flex-container">
-                <div class="pic">
+        <div class="j_grid-container">
+            <div class="j_flex-container">
+                <div class="j_pic">
                     <a href="https://www.millenniumhotels.com/en/cameron-highlands/copthorne-hotel-cameron-highlands/">
                         <img src="image/copthrone.jpg" alt="Copthorne Hotel Cameron Highlands">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="https://www.millenniumhotels.com/en/cameron-highlands/copthorne-hotel-cameron-highlands/" class="title-link">
+                <div class="j_text">
+                    <a href="https://www.millenniumhotels.com/en/cameron-highlands/copthorne-hotel-cameron-highlands/" class="j_title-link">
                         <h3>Copthorne Hotel Cameron Highlands</h3>
                     </a>
-                    <p class="description">
+                    <p class="j_description">
                         Copthorne Cameron Highlands is a 4-star resort in Cameron Highlands featuring a fitness center, garden, terrace, restaurant, indoor pool, and free WiFi. 
                         The resort offers room service, a 24-hour front desk, and a playground. Some rooms include a kitchen, and a buffet breakfast is served daily.
                     </p>
                 </div>
             </div>
-            <!-- Resort 2 -->
-            <div class="flex-container">
-                <div class="pic">
+            <div class="j_flex-container">
+                <div class="j_pic">
                     <a href="https://lakehouse-cameron.com/">
                         <img src="image/Lakehouse.jpg" alt="The Lakehouse, Cameron Highlands">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="https://lakehouse-cameron.com/" class="title-link">
+                <div class="j_text">
+                    <a href="https://lakehouse-cameron.com/" class="j_title-link">
                         <h3>The Lakehouse, Cameron Highlands</h3>
                     </a>
-                    <p class="description">
+                    <p class="j_description">
                         The Lakehouse Cameron Highlands offers air-conditioned rooms with modern amenities, a garden, and a restaurant. 
                         Airport shuttle service is available, with Sultan Azlan Shah Airport 60 miles away.
                     </p>
                 </div>
             </div>
-            <!-- Resort 3 -->
-            <div class="flex-container">
-                <div class="pic">
+            <div class="j_flex-container">
+                <div class="j_pic">
                     <a href="https://www.cameronhighlandsresort.com/">
                         <img src="image/cameronresot.jpg" alt="Cameron Highlands Resort">
                     </a>
                 </div>
-                <div class="text">
-                    <a href="https://www.cameronhighlandsresort.com/" class="title-link">
+                <div class="j_text">
+                    <a href="https://www.cameronhighlandsresort.com/" class="j_title-link">
                         <h3>Cameron Highlands Resort</h3>
                     </a>
-                    <p class="description">
+                    <p class="j_description">
                         Nestled amidst stunning landscapes and lush hills, Cameron Highlands Resort features charming Tudor-style cottages
                         and overlooks an 18-hole golf course, making it ideal for exploration and scenic hikes.
                     </p>
@@ -111,11 +112,11 @@
     </div>
 
     <!-- Comment Section -->
-    <div class="comment-section">
+    <div class="j_comment-section">
         <h2>Share Your Experience</h2>
         <form id="comment-form">
             <textarea id="comment-text" placeholder="Write your comment here..." required></textarea>
-            <div class="rating">
+            <div class="j_rating">
                 <label for="rating">Rate your experience: </label>
                 <select id="rating" name="rating">
                     <option value="5">★★★★★</option>
@@ -130,6 +131,7 @@
         <div id="comments-display">
         </div>
     </div>
+    
 
     <!-- Footer Section -->
     <div class="footer">

@@ -1,0 +1,13 @@
+/* Color Variables */
+:root {
+    --primary-color: #0032A0; 
+    --secondary-color: #00CCCC; 
+    --background-color: #d0e3f4; 
+    --light-background-color: #f9f9f9; 
+    --light-gray: #E0E0E0; 
+    --accent-color: #FFD100; 
+    --text-color: #333333; 
+    --white-color: #FFFFFF; 
+    --hover-bg-color: #E8F0FE; 
+    --hover-shadow-color: rgba(0, 0, 0, 0.2); 
+  }
