@@ -8,6 +8,10 @@
     font-family: 'DM Sans';
     box-sizing: border-box;
 }   
+
+body{
+    background-image: url("/k_images/Main_KL\ scene.jpg");
+}
 .travelGuideBackground{
     width: 100%;
     filter: brightness(60%);
