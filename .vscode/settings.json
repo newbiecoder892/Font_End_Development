@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "appService.defaultWebAppToDeploy": "/subscriptions/770ad4bf-f522-4faf-9fce-cefd5f0b8aab/resourceGroups/First/providers/Microsoft.Web/sites/UCCD2323-Front-End-Asg-P8-9-G51",
+    "appService.deploySubpath": "."
 }
