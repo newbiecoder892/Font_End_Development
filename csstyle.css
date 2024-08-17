@@ -11,6 +11,7 @@ body {
   background-color: var(--background-color);
 }
 
+/* Video Display and Overview Section */
 .video-wrapper {
     position: relative;
     overflow: hidden;
@@ -19,8 +20,8 @@ body {
 
 .header {
     position: relative;
-    z-index: 2; /* Ensure content appears above the video */
-    height: 400px; /* Adjust as needed */
+    z-index: 2; 
+    height: 400px; 
     color: var(--white-color);
     text-align: center;
     display: flex;
@@ -35,20 +36,20 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1; /* Video behind the content */
+    z-index: 1; 
 }
 
 .overview {
     position: relative;
-    z-index: 2; /* Ensure content appears above the video */
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    z-index: 2; 
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
-    margin-top: -50px; /* Overlap with header section */
+    margin-top: -50px; 
     max-width: 100%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px); /* Optional: adds a blur effect to the background */
+    backdrop-filter: blur(5px); 
 }
 
 .overview h2 {
@@ -57,8 +58,8 @@ body {
     margin-bottom: 10px;
 }
 .overview-text {
-  max-width: 70%; /* Adjust width as needed */
-  margin: 0 auto; /* Center the text box */
+  max-width: 70%; 
+  margin: 0 auto; 
 }
 .overview p {
     font-size: 1.2em;
@@ -67,292 +68,191 @@ body {
     font-family: 'DM Sans';
 
 }
-/* Container for the top section */
+
+/* Top Section */
 .Top {
   padding: 20px;
-  background-color: var(--light-background-color); /* Light gray background */
-  text-align: center; /* Center text inside the container */
+  background-color: var(--light-background-color); 
+  text-align: center; 
 }
 
 .Top h3 {
-  font-size: 1.8em; /* Larger font size for the title */
-  color: var(--primary-color); /* Color matching the theme */
-  margin-bottom: 20px; /* Space below the title */
+  font-size: 1.8em; 
+  color: var(--primary-color); 
+  margin-bottom: 20px; 
   font-family: 'DM Sans';
 }
 
-/* Flex container for the sections */
 .Top > div {
   display: flex;
-  flex-wrap: wrap; /* Allow sections to wrap onto multiple lines */
-  justify-content: center; /* Center sections horizontally */
-  gap: 20px; /* Space between sections */
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; 
 }
-
 
 /* Individual section styling */
 .sec {
-  background-color: var(--white-color); /* White background */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Hide overflow content */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px; /* Subtle shadow */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
-  flex: 1 1 300px; /* Flex-grow and basis */
-  max-width: 300px; /* Maximum width for each section */
-  border: 2px solid var(--primary-color); /* Border color and width */
-}
-/* Hover effect for the sections */
-.sec:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; /* Deeper shadow on hover */
+  background-color: var(--white-color); 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  flex: 1 1 300px; 
+  max-width: 300px; 
+  border: 2px solid var(--primary-color); 
 }
 
+.sec:hover {
+  transform: translateY(-5px); 
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; 
+}
+/* Guide Section */
 .guide {
-  padding: 20px; /* Adjust padding for smaller screens */
-  border-radius: 8px; /* Rounded corners */
-  max-width: 1200px; /* Limit the maximum width */
-  margin: 0 auto; /* Center the container */
+  padding: 20px; 
+  border-radius: 8px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .guide h3 {
   font-weight: bolder;
   font-size: 24px;
-  color: var(--primary-color); /* Dark blue for consistency */
-  text-align: center; /* Center-align the heading */
-  margin-bottom: 20px; /* Space below the heading */
+  color: var(--primary-color); 
+  text-align: center; 
+  margin-bottom: 20px; 
 }
-
+/* Acitvity Container */
 .activities-container {
   display: flex;
-  flex-direction: column; /* Stack activities vertically */
-  gap: 10px; /* Increased space between activities */
+  flex-direction: column; 
+  gap: 10px; 
 }
 
 .activity {
-  display: flex; /* Align content side by side */
-  flex-direction: column; /* Stack image and text vertically on smaller screens */
-  align-items: center; /* Center items horizontally */
-  background-color: var(--white-color); /* White background for each activity */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px; /* Subtle shadow */
-  overflow: hidden; /* Hide overflow */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  background-color: var(--white-color); 
+  border-radius: 8px; 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px; 
+  overflow: hidden; 
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .activity:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; /* Deeper shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px; 
 }
 
 .activity-content {
-  display: flex; /* Align content side by side */
-  flex-direction: column; /* Stack text and image vertically */
+  display: flex; 
+  flex-direction: column; 
   width: 100%;
 }
 
-.content-text {
-  padding: 15px; /* Adjust padding for smaller screens */
-}
 
 .activity-title {
-  font-size: 1.5em; /* Adjust font size for better readability on smaller screens */
+  font-size: 1.5em; 
   font-weight: bolder;
-  color: var(--primary-color); /* Dark blue for consistency */
-  margin-bottom: 10px; /* Space below the title */
+  color: var(--primary-color); 
+  margin-bottom: 10px; 
 }
-
+.content-text {
+  padding: 15px; 
+}
 .content-text ul {
-  padding-left: 15px; /* Space before list items */
-  list-style-type: disc; /* List style */
-  font-size: 1.2em; /* Adjust font size */
+  padding-left: 15px; 
+  list-style-type: disc; 
+  font-size: 1.2em; 
 }
 
 .content-image {
-  display: flex; /* Use flexbox to align images horizontally */
-  flex-direction: column; /* Stack images vertically on smaller screens */
-  gap: 10px; /* Space between images */
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
   margin: 10px;
 }
 
 .content-image-wrapper {
-  display: flex; /* Align images horizontally */
-  gap: 10px; /* Space between images */
-  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
-  padding-bottom: 10px; /* Space for horizontal scrollbar */
+  display: flex; 
+  gap: 10px; 
+  overflow-x: auto; 
+  padding-bottom: 10px; 
 }
 
 .content-image img {
-  width: 300px; /* Make images responsive */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover container while maintaining aspect ratio */
-  display: block; /* Ensure images are treated as block elements */
+  width: 300px; 
+  height: auto; 
+  object-fit: cover; 
+  display: block;
 }
 
-
+/* Middle Section */
 .head-middle {
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-color); /* Dark blue */
-  color: var(--white-color); /* White */
+  background-color: var(--primary-color); 
+  color: var(--white-color); 
   font-weight:bold;
   font-size:20px;
   padding: 15px 10px;
-  border-bottom: 3px solid var(--accent-color); /* Accent line */
+  border-bottom: 3px solid var(--accent-color);
 }
 
 .middle {
   padding: 20px;
   background-color: var(--white-color);
 }
-
+/* Container for Places */
 .flex-container {
-  min-width: 300px; /* Minimum width for each section */
-  background-color: var(--light-background-color); /* Light gray background */
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 12px; /* Subtle shadow */
-  text-align: center; /* Center text inside the section */
-  flex: 1 1 0%; /* Flex grow, shrink, and basis */
-  border-radius: 10px; /* Rounded corners */
-  overflow: hidden; /* Hide overflow content */
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transitions for hover effects */
-  display: flex; /* Use flexbox to align content */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  padding: 20px; /* Padding inside the section */
-  margin: 20px; /* Margin between sections */
+  min-width: 300px; 
+  background-color: var(--light-background-color); 
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 12px; 
+  text-align: center;
+  flex: 1 1 0%; 
+  border-radius: 10px; 
+  overflow: hidden; 
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 20px; 
+  margin: 20px; 
 }
 
 .flex-container:hover {
-  transform: translateY(-8px); /* Lift section on hover */
-  background-color: var(--background-color); /* Light blue background on hover */
-  border: 2px solid (--primary-color); /* Dark blue border on hover */
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 24px; /* Deeper shadow on hover */
+  transform: translateY(-8px); 
+  background-color: var(--background-color); 
+  border: 2px solid (--primary-color); 
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 24px; 
 }
 
-/* Ensure images fill their container and maintain aspect ratio */
+
 .pic {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
-  overflow: hidden; /* Hide overflow */
-  margin-bottom: 15px; /* Space between image and text */
+  width: 100%; 
+  height: auto; 
+  overflow: hidden; 
+  margin-bottom: 15px; 
 }
 
 .pic img {
-  width: 100%; /* Full width of the container */
-  height: 200px; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover container while maintaining aspect ratio */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
 }
 
-/* Hide description by default */
+
 .flex-container .description {
-  display: none; /* Hide the description */
+  display: none; 
 }
 
-/* Show description on hover over the section */
+
 .flex-container:hover .description {
   display: block; 
   transition: opacity 0.3s ease, transform 0.3s ease;
   background: rgba(255, 255, 255, 0.9); 
   padding: 15px; 
   border-radius: 5px; 
-}
-
-
-/* Text Container */
-.text {
-  flex-direction: column; /* Stack text elements vertically */
-  font-family: 'DM Sans';
-  color: #333; /* Dark gray text color */
-}
-
-.Att_Title {
-  font-weight: bold; /* Ensure bold text */
-  font-size: 1.3em; /* Adjusted size for emphasis */
-  color: var(--primary-color); /* Dark blue */
-  margin: 10px 0; /* Margin around title */
-}
-
-.title-link {
-  text-decoration: none; /* No underline by default */
-  color: inherit; /* Inherit color from parent */
-}
-
-.title-link:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-.tags {
-  margin: 10px 0; /* Margin around tags */
-}
-
-.tags .tag {
-  display: inline-block; /* Inline block for tags */
-  background-color: var(--light-gray); /* Light gray */
-  color: #333; /* Dark gray text */
-  padding: 6px 12px; /* Padding inside tag */
-  border-radius: 4px; /* Rounded corners */
-  margin-right: 6px; /* Space between tags */
-  font-size: 15px; /* Font size */
-}
-
-.description {
-  margin-top: 10px; /* Margin above description */
-  text-align: justify; /* Justify text alignment */
-  line-height: 1.6; /* Line height for readability */
-}
-
-.location {
-  font-family: 'DM Sans';
-  font-size: 14px; /* Adjust font size */
-  color: var(--primary-color); /* Dark blue for consistency */
-  background-color: var(--light-gray); /* Light gray background */
-  padding: 5px 10px; /* Add padding for spacing */
-  border-radius: 5px; /* Rounded corners */
-  display: inline-flex; /* Align icon and text */
-  align-items: center; /* Vertically center text */
-  margin-top: 10px; /* Space above the location */
-}
-#Gotop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  width: 50px; /* Set width */
-  height: 50px; /* Set height */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: var(--primary-color); /* Use primary color */
-  color: var(--white-color); /* Use text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  border-radius: 50%; /* Make it a circle */
-  font-size: 16px; /* Standardize font size */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
-  transition: background-color 0.3s, transform 0.3s; /* Add transition for smooth hover effect */
-  text-align: center; /* Center the text horizontally */
-  line-height: 50px; /* Center the text vertically */
-}
-
-#Gotop:hover {
-  background-color: var(--accent-color); /* Change background on hover */
-  transform: translateY(-3px); /* Slight lift on hover */
-}
-/* Footer */
-.footer {
-  background-color: var(--primary-color); /* Dark blue */
-  color: var(--white-color); /* White */
-  text-align: center;
-  padding: 20px;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Utility classes */
-.hidden {
-  display: none;
-}
-
-.active {
-  display: block;
 }
 
 /* Grid Layout for Attractions */
@@ -376,10 +276,112 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+
+.text {
+  flex-direction: column; 
+  font-family: 'DM Sans';
+  color: #333; 
+}
+
+.Att_Title {
+  font-weight: bold; 
+  font-size: 1.3em; 
+  color: var(--primary-color); 
+  margin: 10px 0; 
+}
+
+.title-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.title-link:hover {
+  text-decoration: underline; 
+}
+
+.tags {
+  margin: 10px 0; 
+}
+
+.tags .tag {
+  display: inline-block; 
+  background-color: var(--light-gray); 
+  color: #333; 
+  padding: 6px 12px; 
+  border-radius: 4px; 
+  margin-right: 6px; 
+  font-size: 15px; 
+}
+
+.description {
+  margin-top: 10px; 
+  text-align: justify; 
+  line-height: 1.6; 
+}
+
+.location {
+  font-family: 'DM Sans';
+  font-size: 14px;
+  color: var(--primary-color); 
+  background-color: var(--light-gray); 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  display: inline-flex; 
+  align-items: center; 
+  margin-top: 10px; 
+}
+
+/* Back to Top Button */
+#Gotop {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99;
+  width: 50px; 
+  height: 50px; 
+  border: none; 
+  outline: none; 
+  background-color: var(--primary-color); 
+  color: var(--white-color); 
+  cursor: pointer; 
+  border-radius: 50%; 
+  font-size: 16px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s; 
+  text-align: center; 
+  line-height: 50px; 
+}
+
+#Gotop:hover {
+  background-color: var(--accent-color); 
+  transform: translateY(-3px);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color); 
+  color: var(--white-color);
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header {
-    height: 200px; /* Adjust height for smaller screens */
+    height: 200px; 
   }
 
   .flex-container {
@@ -396,13 +398,13 @@ body {
   }
 
   .grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
   }
 }
 
 @media (max-width: 480px) {
   .header {
-    height: 150px; /* Further adjust height */
+    height: 150px; 
   }
   
 
@@ -431,27 +433,27 @@ body {
 }
 
 .sub-header img {
-  width: 60%; /* Makes the image responsive */
-  height: auto; /* Maintains the aspect ratio */
-  max-width: 100%; /* Ensures image doesn't exceed container width */
-  border-radius: 10px; /* Optional: adds rounded corners to the image */
+  width: 60%;
+  height: auto; 
+  max-width: 100%; 
+  border-radius: 10px; 
 }
 
 .sub-img {
-  margin-top: 15px; /* Adjust spacing between header and image */
+  margin-top: 15px; 
 }
 
 /* Sub-Middle Section */
 .sub-middle { 
   display: flex;
-  justify-content: center; /* Centers child elements horizontally */
+  justify-content: center; 
 }
 
 .sub-intro {
   background-color: var(--light-background-color);
   padding: 15px;
   border-radius: 10px;
-  width: 80%; /* Or any width you prefer */
+  width: 80%; 
 }
 .sub-buttons {
   margin-top: 20px;
@@ -486,7 +488,7 @@ body {
 
 .sub-content div {
   
-  min-width: 280px; /* Minimum width for responsiveness */
+  min-width: 280px; 
   background-color: var(--light-background-color);
   padding: 15px;
   margin: 10px;
@@ -511,12 +513,12 @@ body {
 
 .sub-bottom {
   padding: 40px 20px;
-  background-color: var(--light-gray); /* Light background color */
+  background-color: var(--light-gray); 
   text-align: center;
 }
 
 .sub-bottom h2, h3{
-  color: var(--primary-color); /* Dark blue color from your scheme */
+  color: var(--primary-color);
   margin-bottom: 30px;
 }
 
