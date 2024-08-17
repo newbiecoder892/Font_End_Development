@@ -4,19 +4,60 @@
         <meta charset="utf-8"/>
         <title>Discover Malaysia | Main Page</title>
         <link rel="stylesheet" href="mainPage.css">
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer" />
     </head>
     <body>
-        <div class="header">
-            <nav>
-                <ul class="headerLeft">
-                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
-                    <li><a class="food_drinks" href="#food_drinks">Food & Drinks</a></li>
-                    <li><a class="festival" href="#festival">Festival & events</a></li>
-                    <li><a class="contact_us" href="#contact_us">Contact us</a></li>
-                </ul>
-                <img src="Images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo">
-                <ul><li>Sign in</li></ul>
-            </nav>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#"><img src="Images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
+                    <ul class="links">
+                        <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                        <li><a class="food_drinks" href="#food_drinks">Food & Drinks</a></li>
+                        <li><a class="festival" href="#festival">Festival & events</a></li>
+                        <li><a class="contact_us" href="#contact_us">Contact us</a></li>
+                    </ul>
+                    <a href="#" class="signIn">Sign In</a>
+
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="dropdown_menu">
+                        <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
+                        <li><a class="food_drinks" href="#food_drinks">Food & Drinks</a></li>
+                        <li><a class="festival" href="#festival">Festival & events</a></li>
+                        <li><a class="contact_us" href="#contact_us">Contact us</a></li>
+                        <a href="#" class="signInDropDown">Sign In</a>
+                    </div>
+            </div>
+        </header>
+        
+        <div class="traveGuideSection">
+
+            <div class="travelGuideImage">
+                <img src="Images/Main_KL scene.jpg">
+                <div class="content">
+                    <h1>TRAVEL GUIDE</h1>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
         </div>
+        <script>
+            const toggleBtn = document.querySelector(".toggle_btn");
+            const dropdownMenu = document.querySelector(".dropdown_menu");
+
+            toggleBtn.onclick = function(){
+                dropdownMenu.classList.toggle('open');
+                const isOpen = dropDownMenu.classList.contains('open');
+
+            }
+
+        </script>
     </body>
 </html>
