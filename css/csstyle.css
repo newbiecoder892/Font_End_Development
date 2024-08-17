@@ -71,6 +71,7 @@ body {
 
 }
 
+
 /* Top Section */
 .j_Top {
   padding: 20px;
@@ -332,6 +333,24 @@ body {
   align-items: center; 
   margin-top: 10px; 
 }
+
+.back {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button is on top of other elements */
+}
+
+.back ion-icon {
+  color: var(--primary-color); /* Customize the icon color */
+  font-size: 3rem; /* Adjust the size as needed */
+}
+
+
 
 /* Back to Top Button */
 #Gotop {

@@ -1,4 +1,6 @@
 
+
+// Put tags in
 function populateTags() {
   const sections = document.querySelectorAll('.j_flex-container');
 
