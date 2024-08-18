@@ -48,22 +48,49 @@ document.addEventListener('DOMContentLoaded', function() {
   const rating = document.getElementById('rating');
   const commentsDisplay = document.getElementById('comments-display');
 
+  // Load comments and ratings from local storage
+  function loadComments() {
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments.forEach(comment => {
+      displayComment(comment.text, comment.rating);
+    });
+  }
+
+  // Save comment and rating to local storage
+  function saveComment(comment, rating) {
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    comments.push({ text: comment, rating: rating });
+    localStorage.setItem('comments', JSON.stringify(comments));
+  }
+
+  // Display a single comment
+  function displayComment(comment, rating) {
+    const commentDiv = document.createElement('div');
+    commentDiv.className = 'comment';
+    commentDiv.innerHTML = `
+        <p>${comment}</p>
+        <p>Rating: ${'★'.repeat(rating)}</p>
+    `;
+    commentsDisplay.appendChild(commentDiv);
+}
+
+  // Handle form submission
   form.addEventListener('submit', function(event) {
-      event.preventDefault();
+    event.preventDefault();
 
-      const comment = commentText.value.trim();
-      const ratingValue = rating.value;
+    const comment = commentText.value.trim();
+    const ratingValue = rating.value;
 
-      if (comment) {
-          const commentDiv = document.createElement('div');
-          commentDiv.className = 'comment';
-          commentDiv.innerHTML = `<p>${comment}</p><p>Rating: ${'★'.repeat(ratingValue)}</p>`;
-
-          commentsDisplay.appendChild(commentDiv);
-          commentText.value = '';
-          rating.value = '5'; // Reset rating to default value
-      }
+    if (comment) {
+      displayComment(comment, ratingValue);
+      saveComment(comment, ratingValue);
+      commentText.value = '';
+      rating.value = '5'; // Reset rating to default value
+    }
   });
+
+  // Load comments when the page loads
+  loadComments();
 });
 
 
