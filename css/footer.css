@@ -17,12 +17,17 @@
 .k_f3{
     margin-right:40px ;
 }
-.k_f2 a{
+.k_f2 {
+    justify-content: center;
+    text-align: center;
+}
+.k_f2 a {
     list-style-type: none;
     text-decoration: none;
     color:white;
 
 }
+
 .k_f2 li, .k_f1 li{
     list-style-type: none;
     text-decoration: none;
