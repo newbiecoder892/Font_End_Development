@@ -102,15 +102,7 @@
     scale: 1.02;
     transition: 0.3s;
 }
-.website_header .navbar .h_links{
-    display:flex;
-    gap: 2rem;
-}
-.website_header .navbar .toggle_btn{
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none;
-}
+
 .website_header .signIn{
     background-color: black ;
     color: white;
@@ -131,77 +123,10 @@
     scale: 0.98;
 }
 
-.website_header .toggle_btn:hover{
-    scale: 1.05;
-    transition: 0.2s
-
-}
-.website_header .toggle_btn:active{
-    scale: 0.95;
-}
-
-/*dropdown menu */
-.website_header .dropdown_menu{
-    position: absolute;
-    right:2rem;
-    top: 60px;
-    width: 80%;
-    height: 0;
-    background: rgb(243, 243, 243);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: height 0.3s cubic-bezier(0.075, 0.82, 0.165, 1)
-}
-.website_header .dropdown_menu.open{
-    height:210px;
-}
-.website_header .dropdown_menu li{
-    
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.website_header .dropdown_menu .signInDropDown{
-    background-color: black ;
-    display: flex;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    font-size:  0.8rem;
-    cursor: pointer;
-    transition: scale 0.2 ease;
-}
-.website_header .signInDropDown:hover{
-    scale: 1.01;
-    color: white;
-    font-weight: bold;
-}
-.website_header .signInDropDown:active{
-    scale: 0.95;
-}
-
-.website_header .toggle_btn:hover{
-    scale: 1.05;
-}
-.website_header .toggle_btn:active{
-    scale: 0.95;
-}
-.website_header .dropdown_menu .signInDropDown{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.website_header .toggle_btn{
-    display: none;
-}
 
 @media(max-width: 850px){
     
-    .website_header li, .website_header  .signIn
+    .website_header li
     {
         display: none;
     }

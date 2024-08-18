@@ -6,47 +6,37 @@
         <title>Discover Malaysia </title>
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/footer.css">
 
         <!--font awesome-->
         <link 
             rel="stylesheet" 
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         />
-        <!--swiper-->
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
     </head>
     <body>
         <!--swiper-->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         
-        <header class="website_header">
+        <!--Header-->
+        <header class="website_header" id="home_header">
             <div class="navbar">
                 <div class="logo"><a href="index.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
                     <ul class="links">
                         <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
-                        <li><a class="food_drinks" href="#Food & Drinks">Food & Drinks</a></li>
-                        <li><a class="traditional" href="#traditional">Traditional Grame</a></li>
-                        <li><a class="contact_us" href="#contact_us">About us</a></li>
+                        <li><a class="food_drinks" href="#local_food">Food & Drinks</a></li>
+                        <li><a class="traditional" href="#trad_game">Traditional Grame</a></li>
+                        <li><a class="contact_us" href="#contact_us">Contact us</a></li>
                     </ul>
                     <a href="register.html" class="signIn" id="signInButton">Sign In</a>
-    
-                    <div class="toggle_btn">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
-    
-                    <div class="dropdown_menu">
-                        <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
-                        <li><a class="food_drinks" href="#food_drinks">Food & Drinks</a></li>
-                        <li><a class="festival" href="#festival">Festival & events</a></li>
-                        <li><a class="contact_us" href="#contact_us">Contact us</a></li>
-                        <a href="#" class="signInDropDown">Sign In</a>
-                    </div>
+
             </div>
         </header>
-        
+        <!--Header-->
+
+        <!--main-->
         <div id="travel_guide" class="traveGuideSection">
             <div class="travelGuideImage">
                 <img src="k_images/Main_KL scene.jpg">
@@ -73,19 +63,42 @@
         <div id="trad_game" class="tradGameSection">
             <img src="k_images/home-trad.png">
             <div class="content3">
-                <a href="traditionalGame.html"><h1>TRADITIONAL GAME</h1></a>
+                <a href="tradGame.html"><h1>TRADITIONAL GAME</h1></a>
             </div>
         </div>
-        <script>
-            const toggleBtn = document.querySelector(".toggle_btn");
-            const dropdownMenu = document.querySelector(".dropdown_menu");
 
-            toggleBtn.onclick = function(){
-                dropdownMenu.classList.toggle('open');
-                const isOpen = dropDownMenu.classList.contains('open');
-
-            }
-
-        </script>
+        <!--Footer-->
+        <footer class="k_footer" id="k-footer">
+            <div class="k_sec">
+                <div class="k_f1" id="contact_us">
+                    <h3>Contact us</h3>
+                    <ul>
+                        <li>+6052323898</li>
+                        <li>discoverMalaysia@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="k_f2">
+                    <h3>Uselful Links</h3>
+                    <ul>
+                        <a href="nature.html"><li>Explore Nature</li></a>
+                        <a href="island.html"><li>Explore Island</li></a>
+                        <a href="themePark.html"><li>Explore Theme Park</li></a>
+                        <a href="foodDrink.html"><li>Discover Food & Drinks</li></a>
+                        <a href="tradGame.html"><li>Discover Traditional Game</li></a>
+                    </ul>
+                </div>
+                <div class="k_f3">
+                    <h3>Follow us</h3>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="k_f4">
+                copyright@discoverMalaysia.com
+            </div>
+        </footer>
     </body>
+    
 </html>
