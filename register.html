@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -13,19 +13,9 @@
     <header class="website_header">
         <div class="navbar">
             <div class="logo"><a href="index.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
-                <ul class="links">
-                    <li><a class="travel_guide" href="#travel_guide">Travel Guide</a></li>
-                    <li><a class="food_drinks" href="#Food & Drinks">Food & Drinks</a></li>
-                    <li><a class="traditional" href="#traditional">Traditional Grame</a></li>
-                    <li><a class="contact_us" href="#contact_us">About us</a></li>
-                </ul>
-                
-                <div class="toggle_btn">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-
         </div>
     </header>
+    <button class="back" onclick="history.back()"><ion-icon name="chevron-back-circle"></ion-icon></button>
 
     <div class="wrapper" id="authWrapper">
         <div class="container-form register" id="signupForm">
@@ -65,6 +55,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="login.js" defer></script>
+    <script src="js/login.js" defer></script>
 </body>
 </html>
