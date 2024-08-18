@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add logout event listener
         logoutButton.addEventListener('click', function() {
             sessionStorage.removeItem('loggedInUser'); // Remove session storage item
-            alert('Successful Logged out!');
             window.location.href = 'index.html'; 
         });
     }
