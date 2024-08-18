@@ -378,7 +378,7 @@ html::before {
 
     .t_back-to-top {
         position: fixed;
-        bottom: 0.2vw;
+        bottom: 7%;
         right: 0.15vw; 
     }
 

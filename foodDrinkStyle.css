@@ -274,21 +274,22 @@ header, nav, .t_section, .t_like-container, button {
     }
 
     .t_back-to-top {
-        bottom: 10px;
+        bottom: 7%;
         right: 10px;
         padding: 10px 15px;
         font-size: 14px;
     }
 }
 
-@media (max-width: 810px) {
+
+@media (max-width: 480px) {
     h1 {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .t_circle {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
     .t_text {
@@ -321,10 +322,11 @@ header, nav, .t_section, .t_like-container, button {
     }
 
     .t_back-to-top {
-        bottom: 10px;
+        bottom: 7%;
         right: 10px;
         padding: 10px 15px;
         font-size: 14px;
     }
 }
+
 
