@@ -1,8 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Check if the user is already logged in
     const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
     const signInButton = document.getElementById('signInButton');
+    const existingLogoutButton = document.getElementById('logoutButton');
 
     if (loggedInUser) {
         // Update the "Sign In" button with the user's first name
@@ -11,20 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
             signInButton.href = "#"; 
         }
 
-        // Create and add a "Logout" button next to the "Sign In" button
-        const logoutButton = document.createElement('a');
-        logoutButton.textContent = 'Logout';
-        logoutButton.href = '#';
-        logoutButton.id = 'logoutButton';
-        logoutButton.style.marginLeft = '5px'; 
+        // Only add the "Logout" button if it doesn't already exist
+        if (!existingLogoutButton) {
+            const logoutButton = document.createElement('a');
+            logoutButton.textContent = 'Logout';
+            logoutButton.href = '#';
+            logoutButton.id = 'logoutButton';
+            logoutButton.style.marginLeft = '5px'; 
 
-        // Append the logout button to the navbar or wherever appropriate
-        signInButton.parentNode.insertBefore(logoutButton, signInButton.nextSibling);
+            // Append the logout button next to the "Sign In" button
+            signInButton.parentNode.insertBefore(logoutButton, signInButton.nextSibling);
 
-        // Add logout event listener
-        logoutButton.addEventListener('click', function() {
-            sessionStorage.removeItem('loggedInUser'); // Remove session storage item
-            window.location.href = 'index.html'; 
-        });
+            // Add logout event listener
+            logoutButton.addEventListener('click', function() {
+                sessionStorage.removeItem('loggedInUser'); // Remove session storage item
+                window.location.href = 'index.html'; 
+            });
+        }
     }
 });
