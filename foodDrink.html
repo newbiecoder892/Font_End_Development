@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Traditional Food and Drink of Malaysia</title>
+        <title>Traditional Foods and Drinks of Malaysia</title>
 
         <!-- Font Family: Pacifico -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +17,29 @@
 
         <!-- CSS file -->
         <link rel="stylesheet" href="foodDrinkStyle.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="js/header.js" defer></script>
+
 
     </head>
     
     <body>
+        <header class="website_header">
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
+                <ul class="links">
+                    <li><a class="travel_guide" href="index.html">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="foodDrink.html">Food & Drinks</a></li>
+                    <li><a class="traditional" href="tradGame.html">Traditional Grame</a></li>
+                    <li><a class="contact_us" href="#contact_us">Contact us</a></li>
+                </ul>
+                <a href="register.html" class="signIn" id="signInButton">Sign In</a>
+            </div>
+        </header>
+
         <header>
-            <h1>Traditional Food and Drink of Malaysia</h1>
+            <h1>Traditional Foods and Drinks of Malaysia</h1>
         </header>
 
         <nav>
@@ -289,6 +306,37 @@
         <br/>
         <br/>
         <p style="font-family: Kalam, cursive; font-size: 30px; text-align: center;">... End of Page ...</p>
-
+            <!--Footer-->
+            <footer class="k_footer" id="k-footer">
+                <div class="k_sec">
+                    <div class="k_f1" id="contact_us">
+                        <h3>Contact us</h3>
+                        <ul>
+                            <li>+6052323898</li>
+                            <li>discoverMalaysia@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="k_f2">
+                        <h3>Uselful Links</h3>
+                        <ul>
+                            <a href="nature.html"><li>Explore Nature</li></a>
+                            <a href="island.html"><li>Explore Island</li></a>
+                            <a href="themePark.html"><li>Explore Theme Park</li></a>
+                            <a href="foodDrink.html"><li>Discover Food & Drinks</li></a>
+                            <a href="tradGame.html"><li>Discover Traditional Game</li></a>
+                        </ul>
+                    </div>
+                    <div class="k_f3">
+                        <h3>Follow us</h3>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </div>
+                <div class="k_f4">
+                    copyright@discoverMalaysia.com
+                </div>
+            </footer>
     </body>
 </html>

@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 .k_sec{
     background-color: #0032A0;
     color:white;
+    font-family: 'DM Sans';
 }
 .k_sec h3{
-    color:rgb(158, 245, 245)
+    color:rgb(158, 245, 245);
+    justify-content: center;
+
 }
 .k_sec {
     padding:10px 30px 30px 10px;
     display: flex;
-    justify-content: center;
     justify-content: space-between;
 }
 .k_f1{

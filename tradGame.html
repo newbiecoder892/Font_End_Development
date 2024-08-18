@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traditional Games of Malaysia</title>
+
+        <!-- Font Family: Pacifico -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        
+        <!-- Font Family: Kalam -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+        <!-- CSS file -->
+        <link rel="stylesheet" href="tradGame.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="js/header.js" defer></script>
+
+        <!--font awesome-->
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    
+    </head>
+
+    <body>
+        <header class="website_header">
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="k_images/websiteLogo-removebg-preview.png" alt="discover malaysia" class="logo"></a></div>
+                <ul class="links">
+                    <li><a class="travel_guide" href="index.html">Travel Guide</a></li>
+                    <li><a class="food_drinks" href="foodDrink.html">Food & Drinks</a></li>
+                    <li><a class="traditional" href="tradGame.html">Traditional Grame</a></li>
+                    <li><a class="contact_us" href="#contact_us">Contact us</a></li>
+                </ul>
+                <a href="register.html" class="signIn" id="signInButton">Sign In</a>
+            </div>
+        </header>
+        <header>
+            <h1>Traditional Games of Malaysia</h1>
+        </header>
+
+        <div class="t_container">
+            <div class="t_scroll-container">
+                <div class="t_circle">
+                    <a href='#t_wau'>
+                        <img id='t_wauImg' src="Images/wau.jpg" alt="Wau">
+                        <div class="t_overlay"></div>
+                        <div class="t_text">Wau</div>
+                    </a>
+                </div>
+    
+                <div class="t_circle">
+                    <a href='#t_gasing'>
+                        <img id='t_gaImg' src="Images/gasing.jpg" alt="Gasing">
+                        <div class="t_overlay"></div>
+                        <div class="t_text">Gasing</div>
+                    </a>
+                </div>
+    
+                <div class="t_circle">
+                    <a href='#t_lompatGetah'>
+                        <img id='t_lompatImg' src="Images/lompatGetah.jpg" alt="Lompat Getah">
+                        <div class="t_overlay"></div>
+                        <div class="t_text">Lompat Getah</div>
+                    </a>
+                </div>
+    
+                <div class="t_circle">
+                    <a href='#t_congkak'>
+                        <img id='t_conImg' src="Images/congkak.jpeg" alt="Congkak">
+                        <div class="t_overlay"></div>
+                        <div class="t_text">Congkak</div>
+                    </a>
+                </div>
+    
+                <div class="t_circle">
+                    <a href='#t_batuSeremban'>
+                        <img id='t_batuImg' src="Images/batuSeremban.png" alt="Batu Seremban">
+                        <div class="t_overlay"></div>
+                        <div class="t_text">Batu Seremban</div>
+                    </a>
+                </div>
+    
+                <div class="t_circle">
+                    <a href='#t_ketingting'>
+                        <img id='t_keImg' src="Images/ketingting.jpg" alt="Ketingting">
+                        <div class="t_overlay"></div>
+                        <div class="t_text">Ketingting</div>
+                    </a>
+                </div>
+    
+                <div class="t_circle">
+                    <a href='#t_sepakTakraw'>
+                        <img id='t_sepakImg' src="Images/sepakTakraw.jpg" alt="Sepak Takraw">
+                        <div class="t_overlay"></div>
+                        <div class="t_text">Sepak Takraw</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="t_content-section">
+            <div class="t_flip-card-container">
+                <section id="t_wau" class="t_image-section">
+                    <div class="t_flip-card" onclick="toggleFlip(this)">
+                        <div class="t_flip-card-inner">
+                            <div class="t_flip-card-front">
+                                <img src="Images/wau.jpg" alt="Wau" class="t_image">
+                                <p class="t_content-desc">Wau</p>
+                            </div>
+                            <div class="t_flip-card-back">
+                                <p class="t_img-desc">
+                                    A Wau is a breathtaking Malaysian kite, famous for its intricate patterns and vibrant colors. 
+                                    It's a symbol of our nation's rich heritage and a beloved sight during festive celebrations. From 
+                                    its traditional bamboo and paper construction to its modern, innovative designs, the Wau continues 
+                                    to captivate hearts and skies.
+                                </p>
+                                <div class="t_like-container">
+                                    <button class="t_like-btn" data-id="t_wauLike">Like</button>
+                                    <span class="t_like-count" id="t_wauLike-count">0</span> Likes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section id="t_gasing" class="t_image-section">
+                    <div class="t_flip-card" onclick="toggleFlip(this)">
+                        <div class="t_flip-card-inner">
+                            <div class="t_flip-card-front">
+                                <img src="Images/gasing.jpg" alt="Gasing" class="t_image">
+                                <p class="t_content-desc">Gasing</p>
+                            </div>
+                            <div class="t_flip-card-back">
+                                <p class="t_img-desc">
+                                    The Gasing is a traditional Malaysian spinning top, a symbol of strength, agility, and skill. 
+                                    Crafted from wood, it's spun with a flick of the wrist, competing for the longest spin time. This 
+                                    thrilling game has been enjoyed for generations, fostering camaraderie and competitive spirit among 
+                                    players.
+                                </p>
+                                <div class="t_like-container">
+                                    <button class="t_like-btn" data-id="t_gasingLike">Like</button>
+                                    <span class="t_like-count" id="t_gasingLike-count">0</span> Likes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section id="t_lompatGetah" class="t_image-section">
+                    <div class="t_flip-card" onclick="toggleFlip(this)">
+                        <div class="t_flip-card-inner">
+                            <div class="t_flip-card-front">
+                                <img src="Images/lompatGetah.jpg" alt="Lompat Getah" class="t_image">
+                                <p class="t_content-desc">Lompat Getah</p>
+                            </div>
+                            <div class="t_flip-card-back">
+                                <p class="t_img-desc">
+                                    Lompat Getah is a traditional Malaysian game of skill and coordination. Players jump over an 
+                                    elastic band stretched between two people, rhythmically chanting while increasing the band's height. 
+                                    It's a fun and energetic game that has been enjoyed by generations of Malaysians.
+                                </p>
+                                <div class="t_like-container">
+                                    <button class="t_like-btn" data-id="t_lompatLike">Like</button>
+                                    <span class="t_like-count" id="t_lompatLike-count">0</span> Likes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section id="t_congkak" class="t_image-section">
+                    <div class="t_flip-card" onclick="toggleFlip(this)">
+                        <div class="t_flip-card-inner">
+                            <div class="t_flip-card-front">
+                                <img src="Images/congkak.jpeg" alt="Congkak" class="t_image">
+                                <p class="t_content-desc">Congkak</p>
+                            </div>
+                            <div class="t_flip-card-back">
+                                <p class="t_img-desc">
+                                    Congkak is a traditional Malay board game requiring strategy and calculation. Players sow seeds 
+                                    (or stones) into pits and capture opponent's seeds. It's a popular pastime that sharpens mental 
+                                    agility and fosters friendly competition.
+                                </p>
+                                <div class="t_like-container">
+                                    <button class="t_like-btn" data-id="t_congkakLike">Like</button>
+                                    <span class="t_like-count" id="t_congkakLike-count">0</span> Likes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section id="t_batuSeremban" class="t_image-section">
+                    <div class="t_flip-card" onclick="toggleFlip(this)">
+                        <div class="t_flip-card-inner">
+                            <div class="t_flip-card-front">
+                                <img src="Images/batuSeremban.png" alt="Batu Seremban" class="t_image">
+                                <p class="t_content-desc">Batu Seremban</p>
+                            </div>
+                            <div class="t_flip-card-back">
+                                <p class="t_img-desc">
+                                    Batu Seremban is a traditional Malaysian game of skill and dexterity. Players toss small stones 
+                                    in various patterns, testing hand-eye coordination and agility. This engaging pastime has been 
+                                    enjoyed by generations of Malaysians, fostering both individual skill and competitive spirit.
+                                </p>
+                                <div class="t_like-container">
+                                    <button class="t_like-btn" data-id="t_batuLike">Like</button>
+                                    <span class="t_like-count" id="t_batuLike-count">0</span> Likes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section id="t_ketingting" class="t_image-section">
+                    <div class="t_flip-card" onclick="toggleFlip(this)">
+                        <div class="t_flip-card-inner">
+                            <div class="t_flip-card-front">
+                                <img src="Images/ketingting.jpg" alt="Ketingting" class="t_image">
+                                <p class="t_content-desc">Ketingting</p>
+                            </div>
+                            <div class="t_flip-card-back">
+                                <p class="t_img-desc">
+                                    Ketingting is a traditional Malaysian game that tests balance and agility. Players hop and jump 
+                                    through a pattern of squares drawn on the ground, tossing and retrieving a small object. It's a fun 
+                                    and active pastime that has been enjoyed by generations of children.
+                                </p>
+                                <div class="t_like-container">
+                                    <button class="t_like-btn" data-id="t_ketLike">Like</button>
+                                    <span class="t_like-count" id="t_ketLike-count">0</span> Likes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <section id="t_sepakTakraw" class="t_image-section">
+                    <div class="t_flip-card" onclick="toggleFlip(this)">
+                        <div class="t_flip-card-inner">
+                            <div class="t_flip-card-front">
+                                <img src="Images/sepakTakraw.jpg" alt="Sepak Takraw" class="t_image">
+                                <p class="t_content-desc">Sepak Takraw</p>
+                            </div>
+                            <div class="t_flip-card-back">
+                                <p class="t_img-desc">
+                                    Sepak Takraw is a dynamic sport combining elements of soccer, volleyball, and martial arts. Players 
+                                    use their feet, knees, chest, and head to keep a rattan ball in continuous play. It's a thrilling 
+                                    spectacle of skill, agility, and teamwork. Sources and related content
+                                </p>
+                                <div class="t_like-container">
+                                    <button class="t_like-btn" data-id="t_sepakLike">Like</button>
+                                    <span class="t_like-count" id="t_sepakLike-count">0</span> Likes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+        </div>
+        
+        <a href="#top" id="t_backToTop" class="t_back-to-top">↑</a>
+        <script src="tradGame.js"></script>     
+        
+        <br/>
+        <br/>
+        <p id="t_end" style="font-family: Kalam, cursive; font-size: 30px; text-align: center;">... End of Page ...</p>
+        <footer class="k_footer" id="k-footer">
+            <div class="k_sec">
+                <div class="k_f1" id="contact_us">
+                    <h3>Contact us</h3>
+                    <ul>
+                        <li>+6052323898</li>
+                        <li>discoverMalaysia@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="k_f2">
+                    <h3>Uselful Links</h3>
+                    <ul>
+                        <a href="nature.html"><li>Explore Nature</li></a>
+                        <a href="island.html"><li>Explore Island</li></a>
+                        <a href="themePark.html"><li>Explore Theme Park</li></a>
+                        <a href="foodDrink.html"><li>Discover Food & Drinks</li></a>
+                        <a href="tradGame.html"><li>Discover Traditional Game</li></a>
+                    </ul>
+                </div>
+                <div class="k_f3">
+                    <h3>Follow us</h3>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+            </div>
+            <div class="k_f4">
+                copyright&copydiscoverMalaysia.com
+            </div>
+        </footer>
+        <script src="tradGame."></script>
+    </body>
+</html>

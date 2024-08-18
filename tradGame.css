@@ -1,0 +1,388 @@
+.pacifico-regular {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Kalam: CSS Classes */
+  .kalam-light {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  /* End of Kalam: CSS Classes */
+  
+
+  h1 {
+    text-align: center;
+    font-family: 'Pacifico', sans-serif;
+    font-size: 56px;
+  }
+
+  html {
+    margin: 0;
+    padding: 0;
+    background: url('Images/tradGameBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    scrollbar-width: none; /*This is used to hide the scrollbar in Firefox */
+}
+
+html::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+    z-index: -1; /* To ensure that the overlay is behind all other content */
+}
+
+.t_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+@keyframes t_scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+  
+.t_scroll-container {
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+    animation: t_scroll 20s linear infinite;
+}
+
+  /* This part of code is for the wrapping of each image in a circle. */
+  .t_circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  .t_circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .t_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(211, 183, 183, 0.45);
+    /* 
+    "0.5" is used to set the background-colour to semi-transparent, 
+    so that the text on top of the image can be shown more clearly. 
+    */
+  }
+  
+.t_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(10, 10, 10);
+    font-size: 23px;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    opacity : 0;
+}
+
+.t_circle:hover .t_overlay, .t_circle:hover .t_text {
+    /* Only display the text when the mouse is hovered on it. */
+    opacity: 1;
+}
+
+
+/* This part is for the flipping effect of cards */
+.t_flip-card-container {
+    display: grid;
+    gap: 5px; /* To adjust spacing between cards */
+}
+
+/* By default, it is 1 card per row */
+.t_flip-card-container {
+    grid-template-columns: 1fr;
+}
+
+.t_flip-card {
+    background-color: transparent;
+    width: 550px; 
+    height: 350px; 
+    perspective: 1000px; /* This is the perspective for 3D effect */
+    cursor: pointer;
+    margin: 20px auto;
+    position: relative; /* To ensure flipping happens within this context */
+}
+
+.t_flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+}
+
+.t_flip-card-front, .t_flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* This is for Safari */
+    border-radius: 10px; /* To round the corners */
+    overflow: hidden; /* Ensures content stays within the card bounds */
+    top: 0;
+    left: 0;
+    box-sizing: border-box; 
+}
+
+.t_flip-card-front {
+    background-color: transparent;
+    color: black;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.t_flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To ensure the image covers the entire area */
+    position: absolute; /* To ensure the image is positioned within the container */
+    top: 0;
+    left: 0;
+}
+
+.t_flip-card-back {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.t_content-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-family: "Kalam", cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0; /* To hide t_content-desc by default */
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Show t_content-desc on hover */
+.t_flip-card-front:hover .t_content-desc {
+    opacity: 1; 
+}
+
+.t_img-desc {
+    margin: 0;
+    font-size: 18px;
+    font-family: "Kalam", cursive;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.4;
+    max-width: 100%;
+}
+
+/* To enable the effect of flipping */
+.flipped .t_flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Styles for back to top button */
+.t_back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px; 
+    padding: 10px 15px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Kalam', cursive;
+    font-size: 16px;
+    font-weight: bolder;
+    z-index: 10;
+}
+
+.t_back-to-top:hover {
+    background-color: #ff4500;
+}
+
+
+/* Styles for like count */
+.t_like-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.t_like-btn {
+    padding: 5px 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Kalam', cursive;
+}
+
+.t_like-btn:hover {
+    background-color: #ff4500;
+}
+
+.t_like-count {
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: 'Kalam', cursive;
+}
+
+.t_like-btn.liked {
+    background-color: #32CD32; 
+}
+
+
+
+/* Large screen: Set 2 flip cards per row. */
+@media screen and (min-width: 768px) {
+    .t_flip-card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .t_image {
+        width: 80%;
+        height: auto;
+    }
+
+    .t_flip-card {
+        width: 92%;
+    }
+}
+
+/* ELements adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .t_image-section {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .t_image {
+        width: 80%;
+        height: auto;
+    }
+
+    .t_flip-card {
+        width: 100%;
+    }
+
+    .t_content-desc {
+        font-size: 12px;
+        opacity: 1;
+    }
+
+    .t_back-to-top {
+        font-size: 14px;
+    }
+
+    .t_text, .t_overlay {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        width: auto;
+        word-wrap: break-word;
+    }
+
+    #t_end {
+        width: auto;
+    }
+
+    .t_image {
+        width: 0.6vw;
+        height: auto;
+    }
+
+    .t_flip-card {
+        width: auto;
+        margin: 0;
+    }
+
+    .t_content-desc {
+        font-size: 12px;
+        opacity: 1;
+    }
+
+    .t_like-container {
+        font-size: 12px;
+    }
+
+    .t_text, .t_overlay {
+        opacity: 1;
+    }
+
+    .t_back-to-top {
+        position: fixed;
+        bottom: 0.2vw;
+        right: 0.15vw; 
+    }
+
+    .t_scroll-container {
+        width: auto;
+    }
+}
