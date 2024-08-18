@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
     background-size: cover;
-    background: url(image/login_register.jpg);
+    background: url(image/.login_register.jpg);
     background-position: center;
 }
 
