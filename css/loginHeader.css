@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar{
+    position: relative;
+}
+.website_header{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    font-family: 'DM Sans';
+
+}
+
+
+.website_header .navbar{
+    padding: auto;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.website_header .navbar .logo {
+    width: 140px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.website_header .logo{
+    background-color: transparent;
+}
+.logo:hover{
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+.website_header .signIn{
+    background-color: black ;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size:  0.8rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.website_header .signIn:hover{
+    scale: 1.05;
+    color: white;
+    font-weight: bold;
+}
+.website_header .signIn:active{
+    scale: 0.98;
+}
+
+
+@media(max-width: 850px){
+
+    .logo{
+        scale:0.8;
+    }
+
+    .navbar a{
+        font-size: 10px;
+    }
+    .signIn{
+        scale:0.9;
+    }
+}
+@media(max-width: 480px){
+    
+    .logo{
+        scale:0.8;
+    }
+
+    .navbar a{
+        font-size: 10px;
+    }
+    .signIn{
+        scale:0.5;
+    }
+}
