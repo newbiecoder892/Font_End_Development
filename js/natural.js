@@ -41,6 +41,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
 ///subpage///
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('comment-form');

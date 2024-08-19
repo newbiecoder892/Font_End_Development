@@ -404,9 +404,26 @@ body {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .j_header {
-    height: 200px; 
+    height: 200px;
   }
 
+  .j_overview {
+    padding: 15px;
+    margin-top: -30px;
+  }
+
+  .j_overview h2 {
+    font-size: 1.5em;
+  }
+
+  .j_overview p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .j_overview-text {
+    max-width: 90%;
+  }
   .j_flex-container {
     flex-direction: column;
     align-items: center;
@@ -427,7 +444,25 @@ body {
 
 @media (max-width: 480px) {
   .j_header {
-    height: 150px; 
+    height: 150px;
+  }
+
+  .j_overview {
+    padding: 10px;
+    margin-top: -20px;
+  }
+
+  .j_overview h2 {
+    font-size: 1.2em;
+  }
+
+  .j_overview p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .j_overview-text {
+    max-width: 100%;
   }
   
 
